@@ -1,0 +1,39 @@
+\hypertarget{optimum__growing__season_8py}{}\section{optimum\+\_\+growing\+\_\+season.\+py File Reference}
+\label{optimum__growing__season_8py}\index{optimum\+\_\+growing\+\_\+season.\+py@{optimum\+\_\+growing\+\_\+season.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceoptimum__growing__season}{optimum\+\_\+growing\+\_\+season}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceoptimum__growing__season_a39480590780518ff82e7c259a8154086}{optimum\+\_\+growing\+\_\+season.\+read\+\_\+file} (path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceoptimum__growing__season_ae41ec55f6e12d36d800ecea02431a361}{optimum\+\_\+growing\+\_\+season.\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+string \hyperlink{namespaceoptimum__growing__season_a8ff964a02946ca58f934b298b97d02a5}{optimum\+\_\+growing\+\_\+season.\+path} = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+tuple \hyperlink{namespaceoptimum__growing__season_a14764e801d085f0fee6374df984ca31a}{optimum\+\_\+growing\+\_\+season.\+df} = read\+\_\+file(path + \textquotesingle{}pall.\+csv\textquotesingle{})
+\item 
+list \hyperlink{namespaceoptimum__growing__season_a85ef5ae3b7aeaa6d70cb52733a03aedf}{optimum\+\_\+growing\+\_\+season.\+fit\+\_\+list} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespaceoptimum__growing__season_a3a6ea20f80fd3051ababd80bd44be590}{optimum\+\_\+growing\+\_\+season.\+df\+\_\+y} = df\mbox{[}year\mbox{]}
+\item 
+int \hyperlink{namespaceoptimum__growing__season_a7db52c7f8bf69d14f4351de1d63a6c88}{optimum\+\_\+growing\+\_\+season.\+begin\+\_\+doy} = 0
+\item 
+list \hyperlink{namespaceoptimum__growing__season_ac483918c3a7aebac572b6cd2f40f8177}{optimum\+\_\+growing\+\_\+season.\+df\+\_\+begin} = df\+\_\+y\mbox{[}(df\+\_\+y.\+index.\+dayofyear $>$= begin\+\_\+date)\mbox{]}
+\item 
+int \hyperlink{namespaceoptimum__growing__season_a14929bfec491de189c1e0e536710facd}{optimum\+\_\+growing\+\_\+season.\+end\+\_\+doy} = 366
+\item 
+list \hyperlink{namespaceoptimum__growing__season_a482c39a2eb8f7c0c781089e4e04cabc6}{optimum\+\_\+growing\+\_\+season.\+df\+\_\+use} = df\+\_\+begin\mbox{[}(df\+\_\+begin.\+index.\+dayofyear $<$= end\+\_\+date)\mbox{]}
+\item 
+tuple \hyperlink{namespaceoptimum__growing__season_a13c3c4032d3b542bded1c71be14555e6}{optimum\+\_\+growing\+\_\+season.\+lm} = smf.\+ols(formula=\textquotesingle{}e6 $\sim$ xpt\textquotesingle{}, data=df\+\_\+use)
+\item 
+list \hyperlink{namespaceoptimum__growing__season_ac9c7287c934ef72155dcfb3411443cde}{optimum\+\_\+growing\+\_\+season.\+headers} = \mbox{[}\textquotesingle{}Year\textquotesingle{}, \textquotesingle{}Begin\textquotesingle{}, \textquotesingle{}End\textquotesingle{}, \textquotesingle{}Slope\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaceoptimum__growing__season_a7567df350b162f7d3d6181ea10f2552e}{optimum\+\_\+growing\+\_\+season.\+df\+\_\+slopes} = pd.\+Data\+Frame(fit\+\_\+list, columns=headers)
+\end{DoxyCompactItemize}

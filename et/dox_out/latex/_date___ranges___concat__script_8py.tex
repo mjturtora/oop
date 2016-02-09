@@ -1,0 +1,95 @@
+\hypertarget{_date___ranges___concat__script_8py}{}\section{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py File Reference}
+\label{_date___ranges___concat__script_8py}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_date___ranges___concat__script}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace_date___ranges___concat__script_aa42aa5a36669a9e4fa69422b8bce9838}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+csv}
+\begin{DoxyCompactList}\small\item\em functions \end{DoxyCompactList}\item 
+def \hyperlink{namespace_date___ranges___concat__script_a302b0e35f8c93633acdf003f4f2d7543}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+dat} (df\+\_\+v, fname, df\+\_\+type)
+\item 
+def \hyperlink{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+concat\+\_\+df}
+\begin{DoxyCompactList}\small\item\em for each type, merge files in date range \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a50ed371d22d0c321c54a15b48b0f72d7}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a8d1f404553f799bb9ff6063b634827a3}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+release\+\_\+start} = dt.\+datetime(2013, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+\hyperlink{namespace_date___ranges___concat__script_a2be9f688e04252334e2560929ca454e1}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+gap\+\_\+anal} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+make\+\_\+gap\+\_\+plots} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_af9826d87d967e0af51a56f35bb53dbad}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+make\+\_\+calc\+\_\+plots} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_aeb5f665fdd491d07f2d8b61e3fe81752}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+csv\+\_\+out} = False
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a0afaa5d03f9354ea68b7437702c1ceb0}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=release\+\_\+start, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a6c0eff6e982e3302358a19994f3da706}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+analysis\+\_\+start} = min(analysis\+\_\+start\+\_\+range)
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+path} = \textquotesingle{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}\+R\+A\+W2\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a475a3d107232b5bb9bd9a5ca10e92b7e}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+et\+\_\+files} = os.\+listdir(path)
+\item 
+int \hyperlink{namespace_date___ranges___concat__script_abb2bf9b40692c8d7be5ca5538b9b5149}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+cnt} = 0
+\item 
+int \hyperlink{namespace_date___ranges___concat__script_a75f2d0ae1ff003c8439ef1b27e325461}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+cnt} = 0
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+f} = open(path + fname, \textquotesingle{}r\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a006bd1ae40aa6caa8031d62e130d3811}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+line} = f.\+readline()
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+span} = et.\+read\+\_\+\+C\+Rthousand\+\_\+file(f, fname)
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_ac154a4bf135658a7c4bc6edd240bd2bc}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+date\+\_\+str} = C\+Rthousand\+\_\+span\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_ace8dedb82d3f22c382b819ebb4656329}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+time\+\_\+str} = C\+Rthousand\+\_\+span\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a81b3856c7074c340f9a8124ee1335487}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+stop\+\_\+time}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_ad95c3578d6bdd82cd9b4c84a0f09d26d}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+dict} = C\+Rthousand\+\_\+span
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a68d09e2180475d8aa358ed77f0e0c076}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+skip} = None
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+type} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a14993873c47661e76372d5bf18cc9384}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+span} = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file(f, fname, df\+\_\+type, skip)
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a7c53ccead2ad1f6ae8d72f94e8742a5f}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+cr\+\_\+date}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_ab3db8ce6ea71d1628a0e07ede31f9548}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+dict} = C\+Rten\+X\+\_\+span
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_a539ab90a74797782c7eaa55a47384597}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+f\+\_\+com}
+\begin{DoxyCompactList}\small\item\em dictionaries of date ranges built, now concatenate data for all files back to earliest files needed \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+s} = eval(fl)
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+flist} = \mbox{[}s\mbox{[}j\mbox{]} for j in range(len(s))\mbox{]}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+temp} = concat\+\_\+df(path, flist, df\+\_\+type)
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec} = df\+\_\+temp
+\begin{DoxyCompactList}\small\item\em limit data to analysis date forward (can do end date some other time) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ad91435fa2329924f81af6219f338116d}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec\+\_\+all} = concat\+\_\+df(path, flist, df\+\_\+type, out\+\_\+form=\textquotesingle{}dat\textquotesingle{})
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+met} = df\+\_\+temp
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+rad} = df\+\_\+temp
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a7e6380a9309908f90f8b0f73039f0798}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+echo} = True
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+dtype} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a84d25a038de8829ab65c634c27663453}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+met\+\_\+gaps} = et.\+gap(df\+\_\+met, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a51d248766e4b3ed7f69e33a65a3e3e16}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+rad\+\_\+gaps} = et.\+gap(df\+\_\+rad, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a641948c3ac1c392abde496a098a79699}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec\+\_\+gaps} = et.\+gap(df\+\_\+ec, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a5912818d56cb9479ef5454c9f591cdc6}{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+calc} = et.\+s\+\_\+met\+\_\+calcs(df\+\_\+met, df\+\_\+rad, df\+\_\+ec, make\+\_\+calc\+\_\+plots)
+\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{s__post__process_01-_01_comments_8py}{}\section{s\+\_\+post\+\_\+process -\/ Comments.\+py File Reference}
+\label{s__post__process_01-_01_comments_8py}\index{s\+\_\+post\+\_\+process -\/ Comments.\+py@{s\+\_\+post\+\_\+process -\/ Comments.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaces__post__process_01-_01_comments}{s\+\_\+post\+\_\+process -\/ Comments}
+\item 
+ \hyperlink{namespaces__post__process}{s\+\_\+post\+\_\+process}
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Comments 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_aa93abb3c2ba5b38151b6fae9743987e1}{s\+\_\+post\+\_\+process -\/ Comments.\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a76368c115dbbbd72360ddbd4ec4a9a04}{s\+\_\+post\+\_\+process -\/ Comments.\+release\+\_\+start} = dt.\+datetime(2013, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a52f70ed51d091a8626e86e98b3375f39}{s\+\_\+post\+\_\+process -\/ Comments.\+analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=release\+\_\+start, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a9323e6fee869aa9c51bc49305dcb973d}{s\+\_\+post\+\_\+process -\/ Comments.\+analysis\+\_\+start} = min(analysis\+\_\+start\+\_\+range)
+\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_a443ac998e99f88439a5522c68a86609f}{s\+\_\+post\+\_\+process -\/ Comments.\+path} = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201407\textbackslash{}\textbackslash{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em path for raw data\+: \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path for F\+O\+R\+T\+R\+A\+N output\+: \end{DoxyCompactList}\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_a755936030fef486b5e163765fe6030b8}{s\+\_\+post\+\_\+process -\/ Comments.\+fname} = \textquotesingle{}palldata.\+txt\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Read p file. \end{DoxyCompactList}\item 
+\hyperlink{namespaces__post__process_01-_01_comments_a44e382ad617792a5ed02be95da593433}{s\+\_\+post\+\_\+process -\/ Comments.\+pathname} = path+fname
+\item 
+\hyperlink{namespaces__post__process_01-_01_comments_a9ad05e10331e51befb7fbd20adefb30e}{s\+\_\+post\+\_\+process -\/ Comments.\+kdc} = True
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a043c82fbb0106ffd9805f3c107892cf5}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+p}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_ac48c9e765f3ad2bfb2f1dd1af5b16598}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+q}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a5cad3f0b3385326f66c3ea7402ac4b4b}{s\+\_\+post\+\_\+process -\/ Comments.\+ts\+\_\+maa} = df\+\_\+p\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em variables on q file (like qalldata\+\_\+1402.\+xlsx)\+: yr dy t xmois ws solar airtemp def avail xpt e5 h5 e6 cv ep E\+T \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a816aaeb2a13f356b17e012a7e77253a7}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+c}
+\begin{DoxyCompactList}\small\item\em ep D\+O\+E\+S depend on fortran so this should be in post ep\+\_\+day if ...solar and ep $>$ 0 (use solar $>$1 for consistency?) ep\+\_\+day = ep, else 0 B\+U\+T ep only !=0 when (day.\+gt.\+95.\+and.\+day.\+lt.\+316)!! \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a799dd3cc5b8e24283cbce5d20d97168b}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+hh}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a1b2d87778a264a8cbd089338b879c0ad}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day\+\_\+mn} = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Get summaries ts\+\_\+maa = df\+\_\+p\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) need mean of E\+T for daily E\+T, not sum df\+\_\+day\+\_\+mn = df\+\_\+hh\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) df\+\_\+day\+\_\+sum = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}sum\textquotesingle{}) df\+\_\+day = df\+\_\+day\+\_\+sum.\+join(df\+\_\+day\+\_\+mn) \end{DoxyCompactList}\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a171d51f6d9fd3e0e8100d8a932b24f3d}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day\+\_\+sum} = df\+\_\+hh\mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a6b0f3b1ea6c915417d9095c71f6a6d37}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day} = df\+\_\+day\+\_\+mn.\+join(df\+\_\+day\+\_\+sum)
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a7e79dd26fcae372621057462f779d8cc}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month\+\_\+mn} = df\+\_\+day\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a6b3103e90669e297e65f84e9223e0d02}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month\+\_\+sum} = df\+\_\+day.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a0c297e8e03d58f418d0c814d57970854}{s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month} = df\+\_\+month\+\_\+sum.\+join(df\+\_\+month\+\_\+mn)
+\end{DoxyCompactItemize}

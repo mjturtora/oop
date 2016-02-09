@@ -1,0 +1,96 @@
+\hypertarget{_preprocess_01_d_r_8py}{}\section{Preprocess D\+R.\+py File Reference}
+\label{_preprocess_01_d_r_8py}\index{Preprocess D\+R.\+py@{Preprocess D\+R.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_preprocess_01_d_r}{Preprocess D\+R}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_a28ebd37638b2a3edddcef38b03de3d9e}{Preprocess D\+R.\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. \end{DoxyCompactList}\item 
+string \hyperlink{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{Preprocess D\+R.\+station} = \textquotesingle{}d\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ae8d2848548745ca8cb3fff24f95b8265}{Preprocess D\+R.\+release\+\_\+start} = dt.\+datetime(2009, 11, 20, 13, 30)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a7026d20c2cef287201c48fdf79c0e8f7}{Preprocess D\+R.\+release\+\_\+end} = dt.\+datetime(2014, 8, 19, 10, 30)
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a6349ca51aac5eadefc205154d717c139}{Preprocess D\+R.\+descriptive\+\_\+echo} = True
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ad7dfeae6dec3bc6a6c9446124ceafdc3}{Preprocess D\+R.\+gap\+\_\+anal} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{Preprocess D\+R.\+make\+\_\+gap\+\_\+plots} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_aae343c994d5743a749e85f21f6ed62a2}{Preprocess D\+R.\+make\+\_\+calc\+\_\+plots} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a35685e7b260e2e5876d1b3b56f3e3677}{Preprocess D\+R.\+csv\+\_\+out} = True
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ad43a2a5b2765a6fdb69bd61e0617774a}{Preprocess D\+R.\+analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=release\+\_\+start, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a21ae2b6d07fc5f6bee079d47f29346d4}{Preprocess D\+R.\+analysis\+\_\+start} = min(analysis\+\_\+start\+\_\+range)
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{Preprocess D\+R.\+path} = \textquotesingle{}..\textbackslash{}\textbackslash{}Dead\+River\textbackslash{}\textbackslash{}\+Raw\textbackslash{}\textbackslash{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em \begin{DoxyVerb}path = '..\\Starkey\\RAW2\\'
+\end{DoxyVerb}
+ path = \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}Working\textbackslash{}\textquotesingle{} \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a561be9ad8b22bc2802b0020d8b239176}{Preprocess D\+R.\+et\+\_\+files} = os.\+listdir(path)
+\item 
+int \hyperlink{namespace_preprocess_01_d_r_a9404d186af19463704b0d7514d09c28a}{Preprocess D\+R.\+C\+Rthousand\+\_\+cnt} = 0
+\item 
+int \hyperlink{namespace_preprocess_01_d_r_a50b6ef7f8682b5031dc5857112fcab2d}{Preprocess D\+R.\+C\+Rten\+X\+\_\+cnt} = 0
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}{Preprocess D\+R.\+f} = open(path + fname, \textquotesingle{}r\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_adf993ed19a62ed0125e7086027d99260}{Preprocess D\+R.\+line} = f.\+readline()
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{Preprocess D\+R.\+C\+Rthousand\+\_\+span} = et.\+read\+\_\+\+C\+Rthousand\+\_\+file(f, fname)
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_a5dd9db5e04103125b0e1a71ee37e106b}{Preprocess D\+R.\+date\+\_\+str} = C\+Rthousand\+\_\+span\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_afe9443eef87a2a031c1106acc31cb166}{Preprocess D\+R.\+time\+\_\+str} = C\+Rthousand\+\_\+span\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a026e495ab57bb5f630a98c27cf13c1aa}{Preprocess D\+R.\+stop\+\_\+time}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a5972ec24a3edf386f881a64fc2e47ed5}{Preprocess D\+R.\+C\+Rthousand\+\_\+dict} = C\+Rthousand\+\_\+span
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a28a0d49fbacac27b8de4fd609043b742}{Preprocess D\+R.\+skip} = None
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{Preprocess D\+R.\+df\+\_\+type} = \textquotesingle{}rad\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a9c3f672064dcd45d53eb354141ad8dde}{Preprocess D\+R.\+C\+Rten\+X\+\_\+span} = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file(f, fname, df\+\_\+type, skip)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a5924b2b745d8569255d35551891b9b4f}{Preprocess D\+R.\+cr\+\_\+date}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a1f133b54c3941799c8821d6d7b6a5d9c}{Preprocess D\+R.\+C\+Rten\+X\+\_\+dict} = C\+Rten\+X\+\_\+span
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_ac21cb069e78807e25e0ea127740544c8}{Preprocess D\+R.\+f\+\_\+com}
+\begin{DoxyCompactList}\small\item\em dictionaries of date ranges built, now concatenate data for all files back to earliest files needed \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}{Preprocess D\+R.\+s} = eval(fl)
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}{Preprocess D\+R.\+flist} = \mbox{[}s\mbox{[}j\mbox{]} for j in range(len(s))\mbox{]}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{Preprocess D\+R.\+df\+\_\+temp} = et.\+concat\+\_\+df(path, flist, df\+\_\+type, station)
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{Preprocess D\+R.\+df\+\_\+ec} = df\+\_\+temp
+\begin{DoxyCompactList}\small\item\em limit data to analysis date range \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a416dccd46e76a20b33904f972fe464df}{Preprocess D\+R.\+df\+\_\+ec\+\_\+all} = et.\+concat\+\_\+df(path, flist, df\+\_\+type, station, \textquotesingle{}dat\textquotesingle{})
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}{Preprocess D\+R.\+df\+\_\+met} = df\+\_\+temp
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}{Preprocess D\+R.\+df\+\_\+rad} = df\+\_\+temp
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a00e73208d968dff947b8535a5c1fb9d9}{Preprocess D\+R.\+ec\+\_\+boo} = pd.\+notnull(df\+\_\+ec\mbox{[}\textquotesingle{}airtemp\textquotesingle{}\mbox{]})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a2ba8e3d62d3eedd973e7dcb3830a2445}{Preprocess D\+R.\+ec\+\_\+all\+\_\+boo} = pd.\+notnull(df\+\_\+ec\+\_\+all.\+loc\mbox{[}\+:, 39\mbox{]})
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{Preprocess D\+R.\+dtype} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_af20162928bf03c462be487f066a127a2}{Preprocess D\+R.\+df\+\_\+met\+\_\+gaps} = et.\+gap(df\+\_\+met, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ad19ea2575c12e287c8750139b04267ad}{Preprocess D\+R.\+df\+\_\+rad\+\_\+gaps} = et.\+gap(df\+\_\+rad, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a6d9628d1772f7649cb01ee5014068f0b}{Preprocess D\+R.\+df\+\_\+ec\+\_\+gaps} = et.\+gap(df\+\_\+ec, dtype, make\+\_\+gap\+\_\+plots)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a07df7a20436d9ce67a065b7180c3053e}{Preprocess D\+R.\+df\+\_\+calc} = et.\+s\+\_\+met\+\_\+calcs(df\+\_\+met, df\+\_\+rad, df\+\_\+ec, station, make\+\_\+calc\+\_\+plots)
+\end{DoxyCompactItemize}

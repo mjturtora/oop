@@ -1,0 +1,457 @@
+\hypertarget{namespace_date___ranges___concat__script}{}\section{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script Namespace Reference}
+\label{namespace_date___ranges___concat__script}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace_date___ranges___concat__script_aa42aa5a36669a9e4fa69422b8bce9838}{df\+\_\+csv}
+\begin{DoxyCompactList}\small\item\em functions \end{DoxyCompactList}\item 
+def \hyperlink{namespace_date___ranges___concat__script_a302b0e35f8c93633acdf003f4f2d7543}{df\+\_\+dat} (df\+\_\+v, fname, \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{df\+\_\+type})
+\item 
+def \hyperlink{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}{concat\+\_\+df}
+\begin{DoxyCompactList}\small\item\em for each type, merge files in date range \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a50ed371d22d0c321c54a15b48b0f72d7}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a8d1f404553f799bb9ff6063b634827a3}{release\+\_\+start} = dt.\+datetime(2013, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+\hyperlink{namespace_date___ranges___concat__script_a2be9f688e04252334e2560929ca454e1}{gap\+\_\+anal} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{make\+\_\+gap\+\_\+plots} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_af9826d87d967e0af51a56f35bb53dbad}{make\+\_\+calc\+\_\+plots} = False
+\item 
+\hyperlink{namespace_date___ranges___concat__script_aeb5f665fdd491d07f2d8b61e3fe81752}{csv\+\_\+out} = False
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a0afaa5d03f9354ea68b7437702c1ceb0}{analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=\hyperlink{namespace_date___ranges___concat__script_a8d1f404553f799bb9ff6063b634827a3}{release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a6c0eff6e982e3302358a19994f3da706}{analysis\+\_\+start} = min(\hyperlink{namespace_date___ranges___concat__script_a0afaa5d03f9354ea68b7437702c1ceb0}{analysis\+\_\+start\+\_\+range})
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{path} = \textquotesingle{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}\+R\+A\+W2\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a475a3d107232b5bb9bd9a5ca10e92b7e}{et\+\_\+files} = os.\+listdir(\hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{path})
+\item 
+int \hyperlink{namespace_date___ranges___concat__script_abb2bf9b40692c8d7be5ca5538b9b5149}{C\+Rthousand\+\_\+cnt} = 0
+\item 
+int \hyperlink{namespace_date___ranges___concat__script_a75f2d0ae1ff003c8439ef1b27e325461}{C\+Rten\+X\+\_\+cnt} = 0
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}{f} = open(\hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{path} + fname, \textquotesingle{}r\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a006bd1ae40aa6caa8031d62e130d3811}{line} = f.\+readline()
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{C\+Rthousand\+\_\+span} = et.\+read\+\_\+\+C\+Rthousand\+\_\+file(\hyperlink{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}{f}, fname)
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_ac154a4bf135658a7c4bc6edd240bd2bc}{date\+\_\+str} = \hyperlink{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_ace8dedb82d3f22c382b819ebb4656329}{time\+\_\+str} = \hyperlink{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a81b3856c7074c340f9a8124ee1335487}{stop\+\_\+time}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_ad95c3578d6bdd82cd9b4c84a0f09d26d}{C\+Rthousand\+\_\+dict} = \hyperlink{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{C\+Rthousand\+\_\+span}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a68d09e2180475d8aa358ed77f0e0c076}{skip} = None
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{df\+\_\+type} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a14993873c47661e76372d5bf18cc9384}{C\+Rten\+X\+\_\+span} = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file(\hyperlink{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}{f}, fname, \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{df\+\_\+type}, \hyperlink{namespace_date___ranges___concat__script_a68d09e2180475d8aa358ed77f0e0c076}{skip})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a7c53ccead2ad1f6ae8d72f94e8742a5f}{cr\+\_\+date}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_ab3db8ce6ea71d1628a0e07ede31f9548}{C\+Rten\+X\+\_\+dict} = \hyperlink{namespace_date___ranges___concat__script_a14993873c47661e76372d5bf18cc9384}{C\+Rten\+X\+\_\+span}
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_a539ab90a74797782c7eaa55a47384597}{f\+\_\+com}
+\begin{DoxyCompactList}\small\item\em dictionaries of date ranges built, now concatenate data for all files back to earliest files needed \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}{s} = eval(fl)
+\item 
+list \hyperlink{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}{flist} = \mbox{[}\hyperlink{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}{s}\mbox{[}j\mbox{]} for j in range(len(\hyperlink{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}{s}))\mbox{]}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{df\+\_\+temp} = \hyperlink{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}{concat\+\_\+df}(\hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{path}, \hyperlink{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}{flist}, \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{df\+\_\+type})
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}{df\+\_\+ec} = \hyperlink{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{df\+\_\+temp}
+\begin{DoxyCompactList}\small\item\em limit data to analysis date forward (can do end date some other time) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_ad91435fa2329924f81af6219f338116d}{df\+\_\+ec\+\_\+all} = \hyperlink{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}{concat\+\_\+df}(\hyperlink{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{path}, \hyperlink{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}{flist}, \hyperlink{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{df\+\_\+type}, out\+\_\+form=\textquotesingle{}dat\textquotesingle{})
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}{df\+\_\+met} = \hyperlink{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{df\+\_\+temp}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}{df\+\_\+rad} = \hyperlink{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{df\+\_\+temp}
+\item 
+\hyperlink{namespace_date___ranges___concat__script_a7e6380a9309908f90f8b0f73039f0798}{echo} = True
+\item 
+string \hyperlink{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{dtype} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a84d25a038de8829ab65c634c27663453}{df\+\_\+met\+\_\+gaps} = et.\+gap(\hyperlink{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}{df\+\_\+met}, \hyperlink{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{dtype}, \hyperlink{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a51d248766e4b3ed7f69e33a65a3e3e16}{df\+\_\+rad\+\_\+gaps} = et.\+gap(\hyperlink{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}{df\+\_\+rad}, \hyperlink{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{dtype}, \hyperlink{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a641948c3ac1c392abde496a098a79699}{df\+\_\+ec\+\_\+gaps} = et.\+gap(\hyperlink{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}{df\+\_\+ec}, \hyperlink{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{dtype}, \hyperlink{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_date___ranges___concat__script_a5912818d56cb9479ef5454c9f591cdc6}{df\+\_\+calc} = et.\+s\+\_\+met\+\_\+calcs(\hyperlink{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}{df\+\_\+met}, \hyperlink{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}{df\+\_\+rad}, \hyperlink{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}{df\+\_\+ec}, \hyperlink{namespace_date___ranges___concat__script_af9826d87d967e0af51a56f35bb53dbad}{make\+\_\+calc\+\_\+plots})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!concat\+\_\+df@{concat\+\_\+df}}
+\index{concat\+\_\+df@{concat\+\_\+df}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{concat\+\_\+df}]{\setlength{\rightskip}{0pt plus 5cm}def Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+concat\+\_\+df (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{flist, }
+\item[{}]{df\+\_\+type, }
+\item[{}]{out\+\_\+form = {\ttfamily \textquotesingle{}csv\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespace_date___ranges___concat__script_ad955506c0e46fb40847aab5fd1059336}
+
+
+for each type, merge files in date range 
+
+\begin{DoxyVerb}Concatenate given list of files using 'update.'
+
+:param path: Pathname to files
+:param flist: List of files to combine
+:param df_type: Data type
+:return: df_cat - DataFrame of combined data
+\end{DoxyVerb}
+ 
+
+Definition at line 70 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_aa42aa5a36669a9e4fa69422b8bce9838}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+csv@{df\+\_\+csv}}
+\index{df\+\_\+csv@{df\+\_\+csv}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+csv}]{\setlength{\rightskip}{0pt plus 5cm}def Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+csv (
+\begin{DoxyParamCaption}
+\item[{}]{df\+\_\+v, }
+\item[{}]{fname, }
+\item[{}]{df\+\_\+type, }
+\item[{}]{echo = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{namespace_date___ranges___concat__script_aa42aa5a36669a9e4fa69422b8bce9838}
+
+
+functions 
+
+output to csv \begin{DoxyVerb}Output a DataFrame to csv file with feedback.
+
+:param df_v: DataFrame to write
+:param fname: Filename (path) to write to.
+:param df_type: Data type (met, ec, or rad)
+:return: Nothing
+\end{DoxyVerb}
+ 
+
+Definition at line 35 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a302b0e35f8c93633acdf003f4f2d7543}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+dat@{df\+\_\+dat}}
+\index{df\+\_\+dat@{df\+\_\+dat}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+dat}]{\setlength{\rightskip}{0pt plus 5cm}def Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+dat (
+\begin{DoxyParamCaption}
+\item[{}]{df\+\_\+v, }
+\item[{}]{fname, }
+\item[{}]{df\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{namespace_date___ranges___concat__script_a302b0e35f8c93633acdf003f4f2d7543}
+
+
+Definition at line 54 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_date___ranges___concat__script_a50ed371d22d0c321c54a15b48b0f72d7}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespace_date___ranges___concat__script_a50ed371d22d0c321c54a15b48b0f72d7}
+
+
+Definition at line 1 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a6c0eff6e982e3302358a19994f3da706}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!analysis\+\_\+start@{analysis\+\_\+start}}
+\index{analysis\+\_\+start@{analysis\+\_\+start}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{analysis\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+analysis\+\_\+start = min({\bf analysis\+\_\+start\+\_\+range})}\label{namespace_date___ranges___concat__script_a6c0eff6e982e3302358a19994f3da706}
+
+
+Definition at line 105 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a0afaa5d03f9354ea68b7437702c1ceb0}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}}
+\index{analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{analysis\+\_\+start\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+analysis\+\_\+start\+\_\+range = pd.\+date\+\_\+range(end={\bf release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})}\label{namespace_date___ranges___concat__script_a0afaa5d03f9354ea68b7437702c1ceb0}
+
+
+Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. 
+
+Next Data Release Start Date/\+Time\+: previous release ends\+: 9/12/13 1330 but, need 70 before start time for moving average alpha 48/day, Use pd.\+date\+\_\+range to get backward time 
+
+Definition at line 104 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a7c53ccead2ad1f6ae8d72f94e8742a5f}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!cr\+\_\+date@{cr\+\_\+date}}
+\index{cr\+\_\+date@{cr\+\_\+date}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{cr\+\_\+date}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+cr\+\_\+date}\label{namespace_date___ranges___concat__script_a7c53ccead2ad1f6ae8d72f94e8742a5f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dt.datetime(CRtenX\_span[\textcolor{stringliteral}{'end\_year'}], 1, 1, CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100,
+2                                   CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] - (100 * (CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100)))
+\end{DoxyCode}
+
+
+Definition at line 157 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a75f2d0ae1ff003c8439ef1b27e325461}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}}
+\index{C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rten\+X\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+cnt = 0}\label{namespace_date___ranges___concat__script_a75f2d0ae1ff003c8439ef1b27e325461}
+
+
+Definition at line 110 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ab3db8ce6ea71d1628a0e07ede31f9548}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}}
+\index{C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rten\+X\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+dict = {\bf C\+Rten\+X\+\_\+span}}\label{namespace_date___ranges___concat__script_ab3db8ce6ea71d1628a0e07ede31f9548}
+
+
+Definition at line 164 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a14993873c47661e76372d5bf18cc9384}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}}
+\index{C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rten\+X\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rten\+X\+\_\+span = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file({\bf f}, fname, {\bf df\+\_\+type}, {\bf skip})}\label{namespace_date___ranges___concat__script_a14993873c47661e76372d5bf18cc9384}
+
+
+Definition at line 156 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_abb2bf9b40692c8d7be5ca5538b9b5149}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}}
+\index{C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rthousand\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+cnt = 0}\label{namespace_date___ranges___concat__script_abb2bf9b40692c8d7be5ca5538b9b5149}
+
+
+Definition at line 109 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ad95c3578d6bdd82cd9b4c84a0f09d26d}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}}
+\index{C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rthousand\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+dict = {\bf C\+Rthousand\+\_\+span}}\label{namespace_date___ranges___concat__script_ad95c3578d6bdd82cd9b4c84a0f09d26d}
+
+
+Definition at line 139 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}}
+\index{C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{C\+Rthousand\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+C\+Rthousand\+\_\+span = et.\+read\+\_\+\+C\+Rthousand\+\_\+file({\bf f}, fname)}\label{namespace_date___ranges___concat__script_a78202928a38556bf4ca275bd38d154de}
+
+
+Definition at line 130 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_aeb5f665fdd491d07f2d8b61e3fe81752}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!csv\+\_\+out@{csv\+\_\+out}}
+\index{csv\+\_\+out@{csv\+\_\+out}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{csv\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+csv\+\_\+out = False}\label{namespace_date___ranges___concat__script_aeb5f665fdd491d07f2d8b61e3fe81752}
+
+
+Definition at line 27 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ac154a4bf135658a7c4bc6edd240bd2bc}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!date\+\_\+str@{date\+\_\+str}}
+\index{date\+\_\+str@{date\+\_\+str}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{date\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+date\+\_\+str = {\bf C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}}\label{namespace_date___ranges___concat__script_ac154a4bf135658a7c4bc6edd240bd2bc}
+
+
+Definition at line 131 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a5912818d56cb9479ef5454c9f591cdc6}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+calc@{df\+\_\+calc}}
+\index{df\+\_\+calc@{df\+\_\+calc}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+calc}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+calc = et.\+s\+\_\+met\+\_\+calcs({\bf df\+\_\+met}, {\bf df\+\_\+rad}, {\bf df\+\_\+ec}, {\bf make\+\_\+calc\+\_\+plots})}\label{namespace_date___ranges___concat__script_a5912818d56cb9479ef5454c9f591cdc6}
+
+
+Definition at line 275 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+ec@{df\+\_\+ec}}
+\index{df\+\_\+ec@{df\+\_\+ec}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+ec}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec = {\bf df\+\_\+temp}}\label{namespace_date___ranges___concat__script_a6b75ca8020ee28148a9e0c6d2772773f}
+
+
+limit data to analysis date forward (can do end date some other time) 
+
+
+
+Definition at line 210 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ad91435fa2329924f81af6219f338116d}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+ec\+\_\+all@{df\+\_\+ec\+\_\+all}}
+\index{df\+\_\+ec\+\_\+all@{df\+\_\+ec\+\_\+all}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+ec\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec\+\_\+all = {\bf concat\+\_\+df}({\bf path}, {\bf flist}, {\bf df\+\_\+type}, out\+\_\+form=\textquotesingle{}dat\textquotesingle{})}\label{namespace_date___ranges___concat__script_ad91435fa2329924f81af6219f338116d}
+
+
+Definition at line 211 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a641948c3ac1c392abde496a098a79699}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+ec\+\_\+gaps@{df\+\_\+ec\+\_\+gaps}}
+\index{df\+\_\+ec\+\_\+gaps@{df\+\_\+ec\+\_\+gaps}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+ec\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+ec\+\_\+gaps = et.\+gap({\bf df\+\_\+ec}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_date___ranges___concat__script_a641948c3ac1c392abde496a098a79699}
+
+
+Definition at line 271 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+met@{df\+\_\+met}}
+\index{df\+\_\+met@{df\+\_\+met}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+met}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+met = {\bf df\+\_\+temp}}\label{namespace_date___ranges___concat__script_a5e14622a073742013d9fbfb848d5bacc}
+
+
+Definition at line 213 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a84d25a038de8829ab65c634c27663453}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+met\+\_\+gaps@{df\+\_\+met\+\_\+gaps}}
+\index{df\+\_\+met\+\_\+gaps@{df\+\_\+met\+\_\+gaps}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+met\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+met\+\_\+gaps = et.\+gap({\bf df\+\_\+met}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_date___ranges___concat__script_a84d25a038de8829ab65c634c27663453}
+
+
+Definition at line 263 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+rad@{df\+\_\+rad}}
+\index{df\+\_\+rad@{df\+\_\+rad}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+rad = {\bf df\+\_\+temp}}\label{namespace_date___ranges___concat__script_a9631d14137c13d0357d9b25cb16274e9}
+
+
+Definition at line 215 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a51d248766e4b3ed7f69e33a65a3e3e16}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+rad\+\_\+gaps@{df\+\_\+rad\+\_\+gaps}}
+\index{df\+\_\+rad\+\_\+gaps@{df\+\_\+rad\+\_\+gaps}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+rad\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+rad\+\_\+gaps = et.\+gap({\bf df\+\_\+rad}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_date___ranges___concat__script_a51d248766e4b3ed7f69e33a65a3e3e16}
+
+
+Definition at line 267 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+temp@{df\+\_\+temp}}
+\index{df\+\_\+temp@{df\+\_\+temp}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+temp}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+temp = {\bf concat\+\_\+df}({\bf path}, {\bf flist}, {\bf df\+\_\+type})}\label{namespace_date___ranges___concat__script_ac8906280d8951e2a35e0bfab0023e8ff}
+
+
+Definition at line 204 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!df\+\_\+type@{df\+\_\+type}}
+\index{df\+\_\+type@{df\+\_\+type}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{df\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+df\+\_\+type = \textquotesingle{}met\textquotesingle{}}\label{namespace_date___ranges___concat__script_ac33a88b539edf5ce073799879c45e2e8}
+
+
+Definition at line 153 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!dtype@{dtype}}
+\index{dtype@{dtype}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{dtype}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+dtype = \textquotesingle{}met\textquotesingle{}}\label{namespace_date___ranges___concat__script_a56177341fd21f8aeccbe4aec16af04a6}
+
+
+Definition at line 262 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a7e6380a9309908f90f8b0f73039f0798}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!echo@{echo}}
+\index{echo@{echo}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{echo}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+echo = True}\label{namespace_date___ranges___concat__script_a7e6380a9309908f90f8b0f73039f0798}
+
+
+Definition at line 216 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a475a3d107232b5bb9bd9a5ca10e92b7e}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!et\+\_\+files@{et\+\_\+files}}
+\index{et\+\_\+files@{et\+\_\+files}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{et\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+et\+\_\+files = os.\+listdir({\bf path})}\label{namespace_date___ranges___concat__script_a475a3d107232b5bb9bd9a5ca10e92b7e}
+
+
+Definition at line 108 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!f@{f}}
+\index{f@{f}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+f = open({\bf path} + fname, \textquotesingle{}r\textquotesingle{})}\label{namespace_date___ranges___concat__script_ad5658856a51a27b2b1e1471fc153ad62}
+
+
+Definition at line 125 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a539ab90a74797782c7eaa55a47384597}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!f\+\_\+com@{f\+\_\+com}}
+\index{f\+\_\+com@{f\+\_\+com}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{f\+\_\+com}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+f\+\_\+com}\label{namespace_date___ranges___concat__script_a539ab90a74797782c7eaa55a47384597}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [\textcolor{stringliteral}{"CRtenX\_dict[(CRtenX\_dict.loc[:, 'df\_type'] == 'met')]['file\_name']"},
+2              \textcolor{stringliteral}{"CRtenX\_dict[(CRtenX\_dict.loc[:, 'df\_type'] == 'ec')]['file\_name']"},
+3              \textcolor{stringliteral}{"CRthousand\_dict[(CRthousand\_dict.loc[:,'df\_type']=='rad')]['file\_name']"}]
+\end{DoxyCode}
+
+
+dictionaries of date ranges built, now concatenate data for all files back to earliest files needed 
+
+
+
+Definition at line 196 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!flist@{flist}}
+\index{flist@{flist}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{flist}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+flist = \mbox{[}{\bf s}\mbox{[}j\mbox{]} for j in range(len({\bf s}))\mbox{]}}\label{namespace_date___ranges___concat__script_a85f8f04b5018cab654cd0912d726418c}
+
+
+Definition at line 203 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a2be9f688e04252334e2560929ca454e1}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!gap\+\_\+anal@{gap\+\_\+anal}}
+\index{gap\+\_\+anal@{gap\+\_\+anal}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{gap\+\_\+anal}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+gap\+\_\+anal = False}\label{namespace_date___ranges___concat__script_a2be9f688e04252334e2560929ca454e1}
+
+
+Definition at line 22 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a006bd1ae40aa6caa8031d62e130d3811}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!line@{line}}
+\index{line@{line}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+line = f.\+readline()}\label{namespace_date___ranges___concat__script_a006bd1ae40aa6caa8031d62e130d3811}
+
+
+Definition at line 126 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_af9826d87d967e0af51a56f35bb53dbad}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!make\+\_\+calc\+\_\+plots@{make\+\_\+calc\+\_\+plots}}
+\index{make\+\_\+calc\+\_\+plots@{make\+\_\+calc\+\_\+plots}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{make\+\_\+calc\+\_\+plots}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+make\+\_\+calc\+\_\+plots = False}\label{namespace_date___ranges___concat__script_af9826d87d967e0af51a56f35bb53dbad}
+
+
+Definition at line 25 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!make\+\_\+gap\+\_\+plots@{make\+\_\+gap\+\_\+plots}}
+\index{make\+\_\+gap\+\_\+plots@{make\+\_\+gap\+\_\+plots}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{make\+\_\+gap\+\_\+plots}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+make\+\_\+gap\+\_\+plots = False}\label{namespace_date___ranges___concat__script_a8daa59e883d598cddf6265daf73b3368}
+
+
+Definition at line 23 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!path@{path}}
+\index{path@{path}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+path = \textquotesingle{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}\+R\+A\+W2\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespace_date___ranges___concat__script_a8333f861dcf7a2c4d8513c76222f5c6a}
+
+
+Definition at line 107 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a8d1f404553f799bb9ff6063b634827a3}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!release\+\_\+start@{release\+\_\+start}}
+\index{release\+\_\+start@{release\+\_\+start}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{release\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+release\+\_\+start = dt.\+datetime(2013, 9, 12, 14)}\label{namespace_date___ranges___concat__script_a8d1f404553f799bb9ff6063b634827a3}
+
+
+Program run time options\+: 
+
+
+
+Definition at line 19 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!s@{s}}
+\index{s@{s}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+s = eval(fl)}\label{namespace_date___ranges___concat__script_a068b2f68f66799aba475185bfe305eca}
+
+
+Definition at line 202 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a68d09e2180475d8aa358ed77f0e0c076}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!skip@{skip}}
+\index{skip@{skip}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+skip = None}\label{namespace_date___ranges___concat__script_a68d09e2180475d8aa358ed77f0e0c076}
+
+
+Definition at line 150 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_a81b3856c7074c340f9a8124ee1335487}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!stop\+\_\+time@{stop\+\_\+time}}
+\index{stop\+\_\+time@{stop\+\_\+time}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{stop\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+stop\+\_\+time}\label{namespace_date___ranges___concat__script_a81b3856c7074c340f9a8124ee1335487}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dt.datetime(int(date\_str[0:4]), int(date\_str[5:7]), int(date\_str[8:10]),
+2                                     int(time\_str[0:2]), int(time\_str[3:5]))
+\end{DoxyCode}
+
+
+Definition at line 133 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+
+\hypertarget{namespace_date___ranges___concat__script_ace8dedb82d3f22c382b819ebb4656329}{}\index{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}!time\+\_\+str@{time\+\_\+str}}
+\index{time\+\_\+str@{time\+\_\+str}!Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script@{Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script}}
+\subsubsection[{time\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}list Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+time\+\_\+str = {\bf C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}}\label{namespace_date___ranges___concat__script_ace8dedb82d3f22c382b819ebb4656329}
+
+
+Definition at line 132 of file Date\+\_\+\+Ranges\+\_\+\+Concat\+\_\+script.\+py.
+

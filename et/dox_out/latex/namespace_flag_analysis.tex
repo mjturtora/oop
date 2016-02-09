@@ -1,0 +1,176 @@
+\hypertarget{namespace_flag_analysis}{}\section{Flag\+Analysis Namespace Reference}
+\label{namespace_flag_analysis}\index{Flag\+Analysis@{Flag\+Analysis}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace_flag_analysis_a4ef4afc0d129e509db5b4e87e7f89520}{get\+\_\+colors} (num\+\_\+colors)
+\item 
+def \hyperlink{namespace_flag_analysis_aea67ad62c26ead387c02331695c812a1}{get\+\_\+df\+\_\+from\+\_\+file} (path\+\_\+name)
+\item 
+def \hyperlink{namespace_flag_analysis_a4b1d5d88a8955d1fdb0302a7c316c15c}{refactor\+\_\+time} (\hyperlink{namespace_flag_analysis_ae8822b0eb9daec5247dbcf50515f9809}{df})
+\item 
+def \hyperlink{namespace_flag_analysis_a3dd518fd2de056580053831b7cc0461c}{save\+\_\+to\+\_\+csv} (\hyperlink{namespace_flag_analysis_ae8822b0eb9daec5247dbcf50515f9809}{df}, path\+\_\+name)
+\item 
+def \hyperlink{namespace_flag_analysis_a9032e3f92b63876c3a38cc8f6a5e0d3f}{make\+\_\+plot} (\hyperlink{namespace_flag_analysis_a71e45af7a483a1647c8609f98d8b959e}{df\+\_\+pivt}, \hyperlink{namespace_flag_analysis_a2580a0126198e57e3b911e2e9005ce1e}{number\+\_\+of\+\_\+plot\+\_\+colors}, \hyperlink{namespace_flag_analysis_abd038dc9d4b0dae57d6f4ba4218b8f3a}{plot\+\_\+title})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_flag_analysis_a7b5b76152f5c421daf3fbdae1ee42ec5}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+string \hyperlink{namespace_flag_analysis_a479e7d01bc47b2c854b2f33d7d8b2719}{path} = \textquotesingle{}..\textbackslash{}\textbackslash{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+int \hyperlink{namespace_flag_analysis_a2580a0126198e57e3b911e2e9005ce1e}{number\+\_\+of\+\_\+plot\+\_\+colors} = 120
+\item 
+string \hyperlink{namespace_flag_analysis_a39d797833bc2634e7f4c497cf090bc66}{pivot\+\_\+column\+\_\+name} = \textquotesingle{}Measure\+Flag\textquotesingle{}
+\item 
+string \hyperlink{namespace_flag_analysis_abd038dc9d4b0dae57d6f4ba4218b8f3a}{plot\+\_\+title} = \textquotesingle{} \textquotesingle{}
+\item 
+tuple \hyperlink{namespace_flag_analysis_ae8822b0eb9daec5247dbcf50515f9809}{df} = \hyperlink{namespace_flag_analysis_aea67ad62c26ead387c02331695c812a1}{get\+\_\+df\+\_\+from\+\_\+file}(\hyperlink{namespace_flag_analysis_a479e7d01bc47b2c854b2f33d7d8b2719}{path} + \textquotesingle{}Flag\+Analysis.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_flag_analysis_ae886d6e98de0bb5bb5a83e12ed72b924}{df\+\_\+piv} = df.\+pivot(index=\textquotesingle{}date\textquotesingle{}, columns=\textquotesingle{}hm\textquotesingle{}, values=\hyperlink{namespace_flag_analysis_a39d797833bc2634e7f4c497cf090bc66}{pivot\+\_\+column\+\_\+name})
+\item 
+\hyperlink{namespace_flag_analysis_a71e45af7a483a1647c8609f98d8b959e}{df\+\_\+pivt} = df\+\_\+piv.\+T
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_flag_analysis_a4ef4afc0d129e509db5b4e87e7f89520}{}\index{Flag\+Analysis@{Flag\+Analysis}!get\+\_\+colors@{get\+\_\+colors}}
+\index{get\+\_\+colors@{get\+\_\+colors}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{get\+\_\+colors}]{\setlength{\rightskip}{0pt plus 5cm}def Flag\+Analysis.\+get\+\_\+colors (
+\begin{DoxyParamCaption}
+\item[{}]{num\+\_\+colors}
+\end{DoxyParamCaption}
+)}\label{namespace_flag_analysis_a4ef4afc0d129e509db5b4e87e7f89520}
+
+
+Definition at line 3 of file Flag\+Analysis.\+py.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_flag_analysis_a4ef4afc0d129e509db5b4e87e7f89520_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_flag_analysis_aea67ad62c26ead387c02331695c812a1}{}\index{Flag\+Analysis@{Flag\+Analysis}!get\+\_\+df\+\_\+from\+\_\+file@{get\+\_\+df\+\_\+from\+\_\+file}}
+\index{get\+\_\+df\+\_\+from\+\_\+file@{get\+\_\+df\+\_\+from\+\_\+file}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{get\+\_\+df\+\_\+from\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}def Flag\+Analysis.\+get\+\_\+df\+\_\+from\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{}]{path\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{namespace_flag_analysis_aea67ad62c26ead387c02331695c812a1}
+
+
+Definition at line 15 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a9032e3f92b63876c3a38cc8f6a5e0d3f}{}\index{Flag\+Analysis@{Flag\+Analysis}!make\+\_\+plot@{make\+\_\+plot}}
+\index{make\+\_\+plot@{make\+\_\+plot}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{make\+\_\+plot}]{\setlength{\rightskip}{0pt plus 5cm}def Flag\+Analysis.\+make\+\_\+plot (
+\begin{DoxyParamCaption}
+\item[{}]{df\+\_\+pivt, }
+\item[{}]{number\+\_\+of\+\_\+plot\+\_\+colors, }
+\item[{}]{plot\+\_\+title}
+\end{DoxyParamCaption}
+)}\label{namespace_flag_analysis_a9032e3f92b63876c3a38cc8f6a5e0d3f}
+
+
+Definition at line 33 of file Flag\+Analysis.\+py.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_flag_analysis_a9032e3f92b63876c3a38cc8f6a5e0d3f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_flag_analysis_a4b1d5d88a8955d1fdb0302a7c316c15c}{}\index{Flag\+Analysis@{Flag\+Analysis}!refactor\+\_\+time@{refactor\+\_\+time}}
+\index{refactor\+\_\+time@{refactor\+\_\+time}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{refactor\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}def Flag\+Analysis.\+refactor\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{}]{df}
+\end{DoxyParamCaption}
+)}\label{namespace_flag_analysis_a4b1d5d88a8955d1fdb0302a7c316c15c}
+
+
+Definition at line 19 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a3dd518fd2de056580053831b7cc0461c}{}\index{Flag\+Analysis@{Flag\+Analysis}!save\+\_\+to\+\_\+csv@{save\+\_\+to\+\_\+csv}}
+\index{save\+\_\+to\+\_\+csv@{save\+\_\+to\+\_\+csv}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{save\+\_\+to\+\_\+csv}]{\setlength{\rightskip}{0pt plus 5cm}def Flag\+Analysis.\+save\+\_\+to\+\_\+csv (
+\begin{DoxyParamCaption}
+\item[{}]{df, }
+\item[{}]{path\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{namespace_flag_analysis_a3dd518fd2de056580053831b7cc0461c}
+
+
+Definition at line 28 of file Flag\+Analysis.\+py.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_flag_analysis_a7b5b76152f5c421daf3fbdae1ee42ec5}{}\index{Flag\+Analysis@{Flag\+Analysis}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string Flag\+Analysis.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespace_flag_analysis_a7b5b76152f5c421daf3fbdae1ee42ec5}
+
+
+Definition at line 45 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_ae8822b0eb9daec5247dbcf50515f9809}{}\index{Flag\+Analysis@{Flag\+Analysis}!df@{df}}
+\index{df@{df}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{df}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flag\+Analysis.\+df = {\bf get\+\_\+df\+\_\+from\+\_\+file}({\bf path} + \textquotesingle{}Flag\+Analysis.\+csv\textquotesingle{})}\label{namespace_flag_analysis_ae8822b0eb9daec5247dbcf50515f9809}
+
+
+Definition at line 69 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_ae886d6e98de0bb5bb5a83e12ed72b924}{}\index{Flag\+Analysis@{Flag\+Analysis}!df\+\_\+piv@{df\+\_\+piv}}
+\index{df\+\_\+piv@{df\+\_\+piv}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{df\+\_\+piv}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flag\+Analysis.\+df\+\_\+piv = df.\+pivot(index=\textquotesingle{}date\textquotesingle{}, columns=\textquotesingle{}hm\textquotesingle{}, values={\bf pivot\+\_\+column\+\_\+name})}\label{namespace_flag_analysis_ae886d6e98de0bb5bb5a83e12ed72b924}
+
+
+Definition at line 76 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a71e45af7a483a1647c8609f98d8b959e}{}\index{Flag\+Analysis@{Flag\+Analysis}!df\+\_\+pivt@{df\+\_\+pivt}}
+\index{df\+\_\+pivt@{df\+\_\+pivt}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{df\+\_\+pivt}]{\setlength{\rightskip}{0pt plus 5cm}Flag\+Analysis.\+df\+\_\+pivt = df\+\_\+piv.\+T}\label{namespace_flag_analysis_a71e45af7a483a1647c8609f98d8b959e}
+
+
+Definition at line 87 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a2580a0126198e57e3b911e2e9005ce1e}{}\index{Flag\+Analysis@{Flag\+Analysis}!number\+\_\+of\+\_\+plot\+\_\+colors@{number\+\_\+of\+\_\+plot\+\_\+colors}}
+\index{number\+\_\+of\+\_\+plot\+\_\+colors@{number\+\_\+of\+\_\+plot\+\_\+colors}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{number\+\_\+of\+\_\+plot\+\_\+colors}]{\setlength{\rightskip}{0pt plus 5cm}int Flag\+Analysis.\+number\+\_\+of\+\_\+plot\+\_\+colors = 120}\label{namespace_flag_analysis_a2580a0126198e57e3b911e2e9005ce1e}
+
+
+Definition at line 64 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a479e7d01bc47b2c854b2f33d7d8b2719}{}\index{Flag\+Analysis@{Flag\+Analysis}!path@{path}}
+\index{path@{path}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Flag\+Analysis.\+path = \textquotesingle{}..\textbackslash{}\textbackslash{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespace_flag_analysis_a479e7d01bc47b2c854b2f33d7d8b2719}
+
+
+Definition at line 50 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_a39d797833bc2634e7f4c497cf090bc66}{}\index{Flag\+Analysis@{Flag\+Analysis}!pivot\+\_\+column\+\_\+name@{pivot\+\_\+column\+\_\+name}}
+\index{pivot\+\_\+column\+\_\+name@{pivot\+\_\+column\+\_\+name}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{pivot\+\_\+column\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}string Flag\+Analysis.\+pivot\+\_\+column\+\_\+name = \textquotesingle{}Measure\+Flag\textquotesingle{}}\label{namespace_flag_analysis_a39d797833bc2634e7f4c497cf090bc66}
+
+
+Definition at line 65 of file Flag\+Analysis.\+py.
+
+\hypertarget{namespace_flag_analysis_abd038dc9d4b0dae57d6f4ba4218b8f3a}{}\index{Flag\+Analysis@{Flag\+Analysis}!plot\+\_\+title@{plot\+\_\+title}}
+\index{plot\+\_\+title@{plot\+\_\+title}!Flag\+Analysis@{Flag\+Analysis}}
+\subsubsection[{plot\+\_\+title}]{\setlength{\rightskip}{0pt plus 5cm}string Flag\+Analysis.\+plot\+\_\+title = \textquotesingle{} \textquotesingle{}}\label{namespace_flag_analysis_abd038dc9d4b0dae57d6f4ba4218b8f3a}
+
+
+Definition at line 67 of file Flag\+Analysis.\+py.
+

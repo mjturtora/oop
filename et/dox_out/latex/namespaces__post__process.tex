@@ -1,0 +1,253 @@
+\hypertarget{namespaces__post__process}{}\section{s\+\_\+post\+\_\+process Namespace Reference}
+\label{namespaces__post__process}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaces__post__process_a48359acf9272ab2ce01abc37dcd5229d}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespaces__post__process_a5629689e4c1b3e73d3894e6d6741d57e}{release\+\_\+start} = dt.\+datetime(2013, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_a651eea1bf0f6d80a22819e1f99c7d72e}{analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=\hyperlink{namespaces__post__process_a5629689e4c1b3e73d3894e6d6741d57e}{release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\item 
+tuple \hyperlink{namespaces__post__process_a47acdf72893f9a03b4829dcaeed5bbb7}{analysis\+\_\+start} = min(\hyperlink{namespaces__post__process_a651eea1bf0f6d80a22819e1f99c7d72e}{analysis\+\_\+start\+\_\+range})
+\item 
+string \hyperlink{namespaces__post__process_a57eb09f6e1e700924ee93b619e0ee863}{path} = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201507\textbackslash{}\textbackslash{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em path for F\+O\+R\+T\+R\+A\+N output\+: \end{DoxyCompactList}\item 
+string \hyperlink{namespaces__post__process_a21843322f9c0bc1447e3fcf8b98c75f1}{fname} = \textquotesingle{}palldata.\+txt\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Read p file. \end{DoxyCompactList}\item 
+\hyperlink{namespaces__post__process_a0b1be5e969443e66bb9beaa3b43cef54}{pathname} = \hyperlink{namespaces__post__process_a57eb09f6e1e700924ee93b619e0ee863}{path}+\hyperlink{namespaces__post__process_a21843322f9c0bc1447e3fcf8b98c75f1}{fname}
+\item 
+\hyperlink{namespaces__post__process_a516eea1289ef3a804cf67e0365d78623}{kdc} = True
+\item 
+tuple \hyperlink{namespaces__post__process_a7c2928665b805f82e2f875eabbbc8cc7}{df\+\_\+p}
+\item 
+tuple \hyperlink{namespaces__post__process_a786c188707f3609514c3f64b95e67f7e}{df\+\_\+q}
+\item 
+list \hyperlink{namespaces__post__process_a62c0d70001797ee6bd82752773e064b7}{ts\+\_\+maa} = \hyperlink{namespaces__post__process_a7c2928665b805f82e2f875eabbbc8cc7}{df\+\_\+p}\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_addd6baa1416f79361bce8b4fbe5deb58}{df\+\_\+c}
+\item 
+tuple \hyperlink{namespaces__post__process_aecff5690de1809fbb2de43b409ab9577}{df\+\_\+hh}
+\begin{DoxyCompactList}\small\item\em B\+U\+T, from F\+O\+R\+T\+R\+A\+N\+: ep only !=0 when (day.\+gt.\+95.\+and.\+day.\+lt.\+316)!! \end{DoxyCompactList}\item 
+\hyperlink{namespaces__post__process_aa86c5a7587bc6a969a974c1fea5c1435}{make\+\_\+rad\+\_\+plot} = True
+\item 
+\hyperlink{namespaces__post__process_af1070685db63f676b11421534fe570e9}{make\+\_\+xpt\+\_\+plot} = True
+\item 
+list \hyperlink{namespaces__post__process_a141e240af1e17cf00558c3487a94a0e9}{df\+\_\+day\+\_\+mn} = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}, \textquotesingle{}P\+E\+T\textquotesingle{}\mbox{]}\mbox{]}
+\item 
+list \hyperlink{namespaces__post__process_a7ccff9385178571e9d3332fde7720e82}{df\+\_\+day\+\_\+sum} = \hyperlink{namespaces__post__process_aecff5690de1809fbb2de43b409ab9577}{df\+\_\+hh}\mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_a97279c14527d8c47412cec3c686f0d46}{df\+\_\+day} = df\+\_\+day\+\_\+mn.\+join(\hyperlink{namespaces__post__process_a7ccff9385178571e9d3332fde7720e82}{df\+\_\+day\+\_\+sum})
+\item 
+list \hyperlink{namespaces__post__process_a3b843457bef429e8fb9f85dfc5cc9640}{df\+\_\+month\+\_\+mn} = \hyperlink{namespaces__post__process_a97279c14527d8c47412cec3c686f0d46}{df\+\_\+day}\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespaces__post__process_a25a3476877b3efdf225f84a94fa05130}{df\+\_\+month\+\_\+sum} = df\+\_\+day.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}, \textquotesingle{}P\+E\+T\textquotesingle{}\mbox{]}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_ad04d032c16dc19da104e670a42d44369}{df\+\_\+month} = df\+\_\+month\+\_\+sum.\+join(\hyperlink{namespaces__post__process_a3b843457bef429e8fb9f85dfc5cc9640}{df\+\_\+month\+\_\+mn})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}s_post_process.py
+Script to process FORTRAN output into ET estimates.  Some code mirrors qalldata file,
+   some mirrors qmonthdate named cumulative files (with pivot tables).
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaces__post__process_a48359acf9272ab2ce01abc37dcd5229d}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespaces__post__process_a48359acf9272ab2ce01abc37dcd5229d}
+
+
+Definition at line 8 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a47acdf72893f9a03b4829dcaeed5bbb7}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!analysis\+\_\+start@{analysis\+\_\+start}}
+\index{analysis\+\_\+start@{analysis\+\_\+start}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{analysis\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+analysis\+\_\+start = min({\bf analysis\+\_\+start\+\_\+range})}\label{namespaces__post__process_a47acdf72893f9a03b4829dcaeed5bbb7}
+
+
+Definition at line 22 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a651eea1bf0f6d80a22819e1f99c7d72e}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}}
+\index{analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{analysis\+\_\+start\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+analysis\+\_\+start\+\_\+range = pd.\+date\+\_\+range(end={\bf release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})}\label{namespaces__post__process_a651eea1bf0f6d80a22819e1f99c7d72e}
+
+
+Definition at line 21 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_addd6baa1416f79361bce8b4fbe5deb58}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+c@{df\+\_\+c}}
+\index{df\+\_\+c@{df\+\_\+c}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+c}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+c}\label{namespaces__post__process_addd6baa1416f79361bce8b4fbe5deb58}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(pathname,
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        index\_col=\textcolor{stringliteral}{'TIMESTAMP'})
+\end{DoxyCode}
+
+
+Definition at line 84 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a97279c14527d8c47412cec3c686f0d46}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+day@{df\+\_\+day}}
+\index{df\+\_\+day@{df\+\_\+day}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+day}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+day = df\+\_\+day\+\_\+mn.\+join({\bf df\+\_\+day\+\_\+sum})}\label{namespaces__post__process_a97279c14527d8c47412cec3c686f0d46}
+
+
+Definition at line 148 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a141e240af1e17cf00558c3487a94a0e9}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+day\+\_\+mn@{df\+\_\+day\+\_\+mn}}
+\index{df\+\_\+day\+\_\+mn@{df\+\_\+day\+\_\+mn}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+day\+\_\+mn}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process.\+df\+\_\+day\+\_\+mn = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}, \textquotesingle{}P\+E\+T\textquotesingle{}\mbox{]}\mbox{]}}\label{namespaces__post__process_a141e240af1e17cf00558c3487a94a0e9}
+
+
+Definition at line 146 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a7ccff9385178571e9d3332fde7720e82}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+day\+\_\+sum@{df\+\_\+day\+\_\+sum}}
+\index{df\+\_\+day\+\_\+sum@{df\+\_\+day\+\_\+sum}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+day\+\_\+sum}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process.\+df\+\_\+day\+\_\+sum = {\bf df\+\_\+hh}\mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}\mbox{]}}\label{namespaces__post__process_a7ccff9385178571e9d3332fde7720e82}
+
+
+Definition at line 147 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_aecff5690de1809fbb2de43b409ab9577}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+hh@{df\+\_\+hh}}
+\index{df\+\_\+hh@{df\+\_\+hh}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+hh}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+hh}\label{namespaces__post__process_aecff5690de1809fbb2de43b409ab9577}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.DataFrame(df\_q, index=df\_q.index, columns=[\textcolor{stringliteral}{'yr'}, \textcolor{stringliteral}{'dy'}, \textcolor{stringliteral}{'t'}, \textcolor{stringliteral}{'date'}, \textcolor{stringliteral}{'precip\_corrected'},
+2                         \textcolor{stringliteral}{'soil\_temp\_smoothed'},
+3                         \textcolor{stringliteral}{'soil\_heat\_flux8\_1'}, \textcolor{stringliteral}{'soil\_heat\_flux8\_2'}, \textcolor{stringliteral}{'soil\_moisture4'}, \textcolor{stringliteral}{'soil\_moisture20'},
+4                         \textcolor{stringliteral}{'wind\_speed'}, \textcolor{stringliteral}{'solar'}, \textcolor{stringliteral}{'SR01Up\_Avg'}, \textcolor{stringliteral}{'REBS'}, \textcolor{stringliteral}{'Rn'}, \textcolor{stringliteral}{'mn\_Rn'}, \textcolor{stringliteral}{'avail'}, \textcolor{stringliteral}{'G'}, \textcolor{stringliteral}{'airtemp'}
+      ,
+5                         \textcolor{stringliteral}{'RH'}, \textcolor{stringliteral}{'DTW'}, \textcolor{stringliteral}{'LE\_day\_and\_filled'}, \textcolor{stringliteral}{'Filled'}, \textcolor{stringliteral}{'LE\_day\_and\_filled\_SR'}, \textcolor{stringliteral}{'ET\_est'}, \textcolor{stringliteral}{'PET'}
+      ,
+6                         \textcolor{stringliteral}{'xpt'}, \textcolor{stringliteral}{'cv'}, \textcolor{stringliteral}{'MAA'}])
+\end{DoxyCode}
+
+
+B\+U\+T, from F\+O\+R\+T\+R\+A\+N\+: ep only !=0 when (day.\+gt.\+95.\+and.\+day.\+lt.\+316)!! 
+
+Get summaries ts\+\_\+maa = df\+\_\+p\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) need mean of E\+T for daily E\+T, not sum df\+\_\+day\+\_\+mn = df\+\_\+hh\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) df\+\_\+day\+\_\+sum = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}sum\textquotesingle{}) df\+\_\+day = df\+\_\+day\+\_\+sum.\+join(df\+\_\+day\+\_\+mn) 
+
+Definition at line 110 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_ad04d032c16dc19da104e670a42d44369}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+month@{df\+\_\+month}}
+\index{df\+\_\+month@{df\+\_\+month}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+month}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+month = df\+\_\+month\+\_\+sum.\+join({\bf df\+\_\+month\+\_\+mn})}\label{namespaces__post__process_ad04d032c16dc19da104e670a42d44369}
+
+
+Definition at line 155 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a3b843457bef429e8fb9f85dfc5cc9640}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+month\+\_\+mn@{df\+\_\+month\+\_\+mn}}
+\index{df\+\_\+month\+\_\+mn@{df\+\_\+month\+\_\+mn}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+month\+\_\+mn}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process.\+df\+\_\+month\+\_\+mn = {\bf df\+\_\+day}\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}}\label{namespaces__post__process_a3b843457bef429e8fb9f85dfc5cc9640}
+
+
+Definition at line 153 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a25a3476877b3efdf225f84a94fa05130}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+month\+\_\+sum@{df\+\_\+month\+\_\+sum}}
+\index{df\+\_\+month\+\_\+sum@{df\+\_\+month\+\_\+sum}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+month\+\_\+sum}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process.\+df\+\_\+month\+\_\+sum = df\+\_\+day.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}, \textquotesingle{}P\+E\+T\textquotesingle{}\mbox{]}\mbox{]}}\label{namespaces__post__process_a25a3476877b3efdf225f84a94fa05130}
+
+
+Definition at line 154 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a7c2928665b805f82e2f875eabbbc8cc7}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+p@{df\+\_\+p}}
+\index{df\+\_\+p@{df\+\_\+p}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+p}\label{namespaces__post__process_a7c2928665b805f82e2f875eabbbc8cc7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(pathname, delim\_whitespace=\textcolor{keyword}{True}, na\_values=[-99999, 99999, 9999, 6999], parse\_dates=[[0, 1, 2
+      ]],
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        date\_parser=et.doy\_parser, index\_col=\textcolor{stringliteral}{'yr\_dy\_t'})
+\end{DoxyCode}
+
+
+Definition at line 31 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a786c188707f3609514c3f64b95e67f7e}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!df\+\_\+q@{df\+\_\+q}}
+\index{df\+\_\+q@{df\+\_\+q}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{df\+\_\+q}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+df\+\_\+q}\label{namespaces__post__process_a786c188707f3609514c3f64b95e67f7e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(pathname, delim\_whitespace=\textcolor{keyword}{True}, na\_values=[-99999, 99999, 9999, -9999, 6999], parse\_dates=[[
+      0, 1, 2]],
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        date\_parser=et.doy\_parser, index\_col=\textcolor{stringliteral}{'yr\_dy\_t'})
+\end{DoxyCode}
+
+
+Definition at line 55 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a21843322f9c0bc1447e3fcf8b98c75f1}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!fname@{fname}}
+\index{fname@{fname}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{fname}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process.\+fname = \textquotesingle{}palldata.\+txt\textquotesingle{}}\label{namespaces__post__process_a21843322f9c0bc1447e3fcf8b98c75f1}
+
+
+Read p file. 
+
+Get processed precip, water levels, and S\+R01\+Up\+\_\+\+Avg from C\+A\+L\+C\+S.
+
+Get centered 141-\/pt moving median alpha.
+
+Definition at line 28 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a516eea1289ef3a804cf67e0365d78623}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!kdc@{kdc}}
+\index{kdc@{kdc}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{kdc}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process.\+kdc = True}\label{namespaces__post__process_a516eea1289ef3a804cf67e0365d78623}
+
+
+Definition at line 30 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_aa86c5a7587bc6a969a974c1fea5c1435}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!make\+\_\+rad\+\_\+plot@{make\+\_\+rad\+\_\+plot}}
+\index{make\+\_\+rad\+\_\+plot@{make\+\_\+rad\+\_\+plot}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{make\+\_\+rad\+\_\+plot}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process.\+make\+\_\+rad\+\_\+plot = True}\label{namespaces__post__process_aa86c5a7587bc6a969a974c1fea5c1435}
+
+
+Definition at line 121 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_af1070685db63f676b11421534fe570e9}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!make\+\_\+xpt\+\_\+plot@{make\+\_\+xpt\+\_\+plot}}
+\index{make\+\_\+xpt\+\_\+plot@{make\+\_\+xpt\+\_\+plot}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{make\+\_\+xpt\+\_\+plot}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process.\+make\+\_\+xpt\+\_\+plot = True}\label{namespaces__post__process_af1070685db63f676b11421534fe570e9}
+
+
+Definition at line 126 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a57eb09f6e1e700924ee93b619e0ee863}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!path@{path}}
+\index{path@{path}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process.\+path = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201507\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespaces__post__process_a57eb09f6e1e700924ee93b619e0ee863}
+
+
+path for F\+O\+R\+T\+R\+A\+N output\+: 
+
+
+
+Definition at line 25 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a0b1be5e969443e66bb9beaa3b43cef54}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!pathname@{pathname}}
+\index{pathname@{pathname}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{pathname}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process.\+pathname = {\bf path}+{\bf fname}}\label{namespaces__post__process_a0b1be5e969443e66bb9beaa3b43cef54}
+
+
+Definition at line 29 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a5629689e4c1b3e73d3894e6d6741d57e}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!release\+\_\+start@{release\+\_\+start}}
+\index{release\+\_\+start@{release\+\_\+start}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{release\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process.\+release\+\_\+start = dt.\+datetime(2013, 9, 12, 14)}\label{namespaces__post__process_a5629689e4c1b3e73d3894e6d6741d57e}
+
+
+Program run time options\+: 
+
+date for data release\+: 
+
+Definition at line 19 of file s\+\_\+post\+\_\+process.\+py.
+
+\hypertarget{namespaces__post__process_a62c0d70001797ee6bd82752773e064b7}{}\index{s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}!ts\+\_\+maa@{ts\+\_\+maa}}
+\index{ts\+\_\+maa@{ts\+\_\+maa}!s\+\_\+post\+\_\+process@{s\+\_\+post\+\_\+process}}
+\subsubsection[{ts\+\_\+maa}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process.\+ts\+\_\+maa = {\bf df\+\_\+p}\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}}\label{namespaces__post__process_a62c0d70001797ee6bd82752773e064b7}
+
+
+Definition at line 66 of file s\+\_\+post\+\_\+process.\+py.
+

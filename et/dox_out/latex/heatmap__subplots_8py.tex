@@ -1,0 +1,41 @@
+\hypertarget{heatmap__subplots_8py}{}\section{heatmap\+\_\+subplots.\+py File Reference}
+\label{heatmap__subplots_8py}\index{heatmap\+\_\+subplots.\+py@{heatmap\+\_\+subplots.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceheatmap__subplots}{heatmap\+\_\+subplots}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceheatmap__subplots_ad7968080746de03ee0c2965d50fe0ebd}{heatmap\+\_\+subplots.\+read\+\_\+file} (path)
+\item 
+def \hyperlink{namespaceheatmap__subplots_aa29417a7896e55be0a2a79e1ac33efdc}{heatmap\+\_\+subplots.\+get\+\_\+xyc} (df)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceheatmap__subplots_a6af073c5f9bb38afeae2782d94abee9e}{heatmap\+\_\+subplots.\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+string \hyperlink{namespaceheatmap__subplots_ab7df7a9753e857e63f1f8b0490859a31}{heatmap\+\_\+subplots.\+path} = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+tuple \hyperlink{namespaceheatmap__subplots_aefdcfb560a154ac398cf52bf39a33cb0}{heatmap\+\_\+subplots.\+df} = read\+\_\+file(path + \textquotesingle{}slopes.\+csv\textquotesingle{})
+\item 
+list \hyperlink{namespaceheatmap__subplots_a38f24e9de53aa8a935925a0154e4b576}{heatmap\+\_\+subplots.\+df\+\_\+13} = df.\+ix\mbox{[}df.\+Year == 2013\mbox{]}
+\item 
+list \hyperlink{namespaceheatmap__subplots_a664795795d2c75a026821e0bd2a32159}{heatmap\+\_\+subplots.\+df\+\_\+14} = df.\+ix\mbox{[}df.\+Year == 2014\mbox{]}
+\item 
+tuple \hyperlink{namespaceheatmap__subplots_af3b54e7f6c49dd1ad4ed6d5cef1541d0}{heatmap\+\_\+subplots.\+df\+\_\+piv} = df\+\_\+13.\+pivot(index=\textquotesingle{}End\textquotesingle{}, columns=\textquotesingle{}Begin\textquotesingle{}, values=\textquotesingle{}Slope\textquotesingle{})
+\item 
+\hyperlink{namespaceheatmap__subplots_ad2fa7e90b3ea750418e7bfe6c549745f}{heatmap\+\_\+subplots.\+Z} = df\+\_\+piv.\+values
+\item 
+list \hyperlink{namespaceheatmap__subplots_adf6fc02d1af5885087dea1400cdcc546}{heatmap\+\_\+subplots.\+begin} = df\+\_\+13\mbox{[}\textquotesingle{}Begin\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespaceheatmap__subplots_a8add050a641ed8526f32e354fffdee93}{heatmap\+\_\+subplots.\+end} = df\+\_\+13\mbox{[}\textquotesingle{}End\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaceheatmap__subplots_a7c42f3ab7941ef3754f98b938080fbd4}{heatmap\+\_\+subplots.\+C\+S}
+\item 
+\hyperlink{namespaceheatmap__subplots_a65159fa9d4b96b5413a4469f96972503}{heatmap\+\_\+subplots.\+cmap} = plt.\+cm.\+Oranges)
+\item 
+tuple \hyperlink{namespaceheatmap__subplots_a737acb8a319fcdea231ba28a1fde0f07}{heatmap\+\_\+subplots.\+cbar} = plt.\+colorbar(C\+S)
+\end{DoxyCompactItemize}

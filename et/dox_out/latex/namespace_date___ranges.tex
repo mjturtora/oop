@@ -1,0 +1,152 @@
+\hypertarget{namespace_date___ranges}{}\section{Date\+\_\+\+Ranges Namespace Reference}
+\label{namespace_date___ranges}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_date___ranges_a74443da5ab7e30b6f0df595d9193852e}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges_a3166246a888c28029ade73f791a9a47b}{release\+\_\+start} = dt.\+datetime(2000, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Main program start. \end{DoxyCompactList}\item 
+string \hyperlink{namespace_date___ranges_aa526c3131e65944170a04293caf94a27}{path} = \textquotesingle{}Q\+:\textbackslash{}\textbackslash{}\+Studies\+\_\+\+Section\textbackslash{}\textbackslash{}\+Projects\textbackslash{}\textbackslash{}\+E\+T\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Field\+Files\textbackslash{}\textbackslash{}\+M\+T Field\+Data\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}\+Raw\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges_adee3fa20a1eb91e33335d0ab5b4c98c1}{et\+\_\+files} = os.\+listdir(\hyperlink{namespace_date___ranges_aa526c3131e65944170a04293caf94a27}{path})
+\item 
+int \hyperlink{namespace_date___ranges_a2415665778377c640e186f6bb947c2c6}{C\+Rthousand\+\_\+cnt} = 0
+\item 
+int \hyperlink{namespace_date___ranges_a343f0166e1218b0e3eeb2ab0f08cfea6}{C\+Rten\+X\+\_\+cnt} = 0
+\item 
+tuple \hyperlink{namespace_date___ranges_afc7dea9c3c3f747aa8fb116c9272c535}{f} = open(\hyperlink{namespace_date___ranges_aa526c3131e65944170a04293caf94a27}{path} + fname, \textquotesingle{}r\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_date___ranges_a62b9a1723ddacde8e439cbd75285a050}{line} = f.\+readline()
+\item 
+tuple \hyperlink{namespace_date___ranges_ab7a9f3dbdd1532a99ec785cb471b70b7}{C\+Rthousand\+\_\+span} = et.\+read\+\_\+\+C\+Rthousand\+\_\+file(\hyperlink{namespace_date___ranges_afc7dea9c3c3f747aa8fb116c9272c535}{f}, fname)
+\item 
+\hyperlink{namespace_date___ranges_ab0958a6af22d624e05417468a7406ad3}{C\+Rthousand\+\_\+dict} = \hyperlink{namespace_date___ranges_ab7a9f3dbdd1532a99ec785cb471b70b7}{C\+Rthousand\+\_\+span}
+\item 
+\hyperlink{namespace_date___ranges_a2e24c9e69898dca66dbb055153bb007c}{skip} = None
+\item 
+string \hyperlink{namespace_date___ranges_a605d356940e408c8334d1e34c3a5c8e9}{df\+\_\+type} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_date___ranges_a2aa7bd3a9fbf74e4eb8bb02ef545ee18}{C\+Rten\+X\+\_\+span} = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file(\hyperlink{namespace_date___ranges_afc7dea9c3c3f747aa8fb116c9272c535}{f}, fname, \hyperlink{namespace_date___ranges_a605d356940e408c8334d1e34c3a5c8e9}{df\+\_\+type}, \hyperlink{namespace_date___ranges_a2e24c9e69898dca66dbb055153bb007c}{skip})
+\item 
+tuple \hyperlink{namespace_date___ranges_a0e1868e374f00a243815eb9757833c80}{cr\+\_\+date}
+\item 
+\hyperlink{namespace_date___ranges_a8d71b20b2d6f8a8bb8883a6f96a6cb7e}{C\+Rten\+X\+\_\+dict} = \hyperlink{namespace_date___ranges_a2aa7bd3a9fbf74e4eb8bb02ef545ee18}{C\+Rten\+X\+\_\+span}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_date___ranges_a74443da5ab7e30b6f0df595d9193852e}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespace_date___ranges_a74443da5ab7e30b6f0df595d9193852e}
+
+
+Definition at line 10 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a0e1868e374f00a243815eb9757833c80}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!cr\+\_\+date@{cr\+\_\+date}}
+\index{cr\+\_\+date@{cr\+\_\+date}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{cr\+\_\+date}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+cr\+\_\+date}\label{namespace_date___ranges_a0e1868e374f00a243815eb9757833c80}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dt.datetime(CRtenX\_span[\textcolor{stringliteral}{'end\_year'}], 1, 1, CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100,
+2                               CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] - (100 * (CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100)))
+\end{DoxyCode}
+
+
+Definition at line 84 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a343f0166e1218b0e3eeb2ab0f08cfea6}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}}
+\index{C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rten\+X\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+\_\+\+Ranges.\+C\+Rten\+X\+\_\+cnt = 0}\label{namespace_date___ranges_a343f0166e1218b0e3eeb2ab0f08cfea6}
+
+
+Definition at line 44 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a8d71b20b2d6f8a8bb8883a6f96a6cb7e}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}}
+\index{C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rten\+X\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+C\+Rten\+X\+\_\+dict = {\bf C\+Rten\+X\+\_\+span}}\label{namespace_date___ranges_a8d71b20b2d6f8a8bb8883a6f96a6cb7e}
+
+
+Definition at line 91 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a2aa7bd3a9fbf74e4eb8bb02ef545ee18}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}}
+\index{C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rten\+X\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+C\+Rten\+X\+\_\+span = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file({\bf f}, fname, {\bf df\+\_\+type}, {\bf skip})}\label{namespace_date___ranges_a2aa7bd3a9fbf74e4eb8bb02ef545ee18}
+
+
+Definition at line 83 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a2415665778377c640e186f6bb947c2c6}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}}
+\index{C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rthousand\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Date\+\_\+\+Ranges.\+C\+Rthousand\+\_\+cnt = 0}\label{namespace_date___ranges_a2415665778377c640e186f6bb947c2c6}
+
+
+Definition at line 43 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_ab0958a6af22d624e05417468a7406ad3}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}}
+\index{C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rthousand\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+C\+Rthousand\+\_\+dict = {\bf C\+Rthousand\+\_\+span}}\label{namespace_date___ranges_ab0958a6af22d624e05417468a7406ad3}
+
+
+Definition at line 66 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_ab7a9f3dbdd1532a99ec785cb471b70b7}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}}
+\index{C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{C\+Rthousand\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+C\+Rthousand\+\_\+span = et.\+read\+\_\+\+C\+Rthousand\+\_\+file({\bf f}, fname)}\label{namespace_date___ranges_ab7a9f3dbdd1532a99ec785cb471b70b7}
+
+
+Definition at line 64 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a605d356940e408c8334d1e34c3a5c8e9}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!df\+\_\+type@{df\+\_\+type}}
+\index{df\+\_\+type@{df\+\_\+type}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{df\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges.\+df\+\_\+type = \textquotesingle{}met\textquotesingle{}}\label{namespace_date___ranges_a605d356940e408c8334d1e34c3a5c8e9}
+
+
+Definition at line 80 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_adee3fa20a1eb91e33335d0ab5b4c98c1}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!et\+\_\+files@{et\+\_\+files}}
+\index{et\+\_\+files@{et\+\_\+files}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{et\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+et\+\_\+files = os.\+listdir({\bf path})}\label{namespace_date___ranges_adee3fa20a1eb91e33335d0ab5b4c98c1}
+
+
+Definition at line 41 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_afc7dea9c3c3f747aa8fb116c9272c535}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!f@{f}}
+\index{f@{f}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+f = open({\bf path} + fname, \textquotesingle{}r\textquotesingle{})}\label{namespace_date___ranges_afc7dea9c3c3f747aa8fb116c9272c535}
+
+
+Definition at line 59 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a62b9a1723ddacde8e439cbd75285a050}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!line@{line}}
+\index{line@{line}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+line = f.\+readline()}\label{namespace_date___ranges_a62b9a1723ddacde8e439cbd75285a050}
+
+
+Definition at line 60 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_aa526c3131e65944170a04293caf94a27}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!path@{path}}
+\index{path@{path}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Date\+\_\+\+Ranges.\+path = \textquotesingle{}Q\+:\textbackslash{}\textbackslash{}\+Studies\+\_\+\+Section\textbackslash{}\textbackslash{}\+Projects\textbackslash{}\textbackslash{}\+E\+T\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Field\+Files\textbackslash{}\textbackslash{}\+M\+T Field\+Data\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}\+Raw\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespace_date___ranges_aa526c3131e65944170a04293caf94a27}
+
+
+Definition at line 29 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a3166246a888c28029ade73f791a9a47b}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!release\+\_\+start@{release\+\_\+start}}
+\index{release\+\_\+start@{release\+\_\+start}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{release\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple Date\+\_\+\+Ranges.\+release\+\_\+start = dt.\+datetime(2000, 9, 12, 14)}\label{namespace_date___ranges_a3166246a888c28029ade73f791a9a47b}
+
+
+Main program start. 
+
+Next Data Release Start Date/\+Time\+: previous release ends\+: 9/12/13 1330 
+
+Definition at line 25 of file Date\+\_\+\+Ranges.\+py.
+
+\hypertarget{namespace_date___ranges_a2e24c9e69898dca66dbb055153bb007c}{}\index{Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}!skip@{skip}}
+\index{skip@{skip}!Date\+\_\+\+Ranges@{Date\+\_\+\+Ranges}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}Date\+\_\+\+Ranges.\+skip = None}\label{namespace_date___ranges_a2e24c9e69898dca66dbb055153bb007c}
+
+
+Definition at line 77 of file Date\+\_\+\+Ranges.\+py.
+

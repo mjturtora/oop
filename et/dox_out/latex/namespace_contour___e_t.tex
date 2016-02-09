@@ -1,0 +1,179 @@
+\hypertarget{namespace_contour___e_t}{}\section{Contour\+\_\+\+E\+T Namespace Reference}
+\label{namespace_contour___e_t}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace_contour___e_t_a4fecac488658fd1b99977ef8e39d5b5b}{get\+\_\+colors} (num\+\_\+colors)
+\item 
+def \hyperlink{namespace_contour___e_t_aedcf6d62d60dabb84683309eaa07b36c}{get\+\_\+df\+\_\+from\+\_\+file} (path\+\_\+name)
+\item 
+def \hyperlink{namespace_contour___e_t_aa24aa07cccaaf85a6757f39c28f31f8c}{refactor\+\_\+time} (\hyperlink{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}{df})
+\item 
+def \hyperlink{namespace_contour___e_t_ae9bd39a079647783c05dbe6639ef91a5}{save\+\_\+to\+\_\+csv} (\hyperlink{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}{df}, path\+\_\+name)
+\item 
+def \hyperlink{namespace_contour___e_t_a4c29753b8fe8e656b9b45e445b43f691}{relabel\+\_\+axis} (axis, plt)
+\item 
+def \hyperlink{namespace_contour___e_t_a90148b8c5b469f8ba98e2d231b2fb45b}{make\+\_\+contour} (\hyperlink{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}{df}, \hyperlink{namespace_contour___e_t_afe10e2d562af1d0f4be9cc7b17a68e49}{df\+\_\+piv})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_contour___e_t_a7af933d5513c2211e9381ded4aa968f8}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+string \hyperlink{namespace_contour___e_t_af326a717be24fa633d2faf0eac687552}{path} = \textquotesingle{}..\textbackslash{}\textbackslash{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+string \hyperlink{namespace_contour___e_t_a1d101debf10ad92d73509b40746b119c}{pivot\+\_\+column\+\_\+name} = \textquotesingle{}E\+T\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}{df} = \hyperlink{namespace_contour___e_t_aedcf6d62d60dabb84683309eaa07b36c}{get\+\_\+df\+\_\+from\+\_\+file}(\hyperlink{namespace_contour___e_t_af326a717be24fa633d2faf0eac687552}{path} + \textquotesingle{}Flag\+Analysis.\+csv\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_contour___e_t_afe10e2d562af1d0f4be9cc7b17a68e49}{df\+\_\+piv} = df.\+pivot(index=\textquotesingle{}dates\textquotesingle{}, columns=\textquotesingle{}times\textquotesingle{}, values=\hyperlink{namespace_contour___e_t_a1d101debf10ad92d73509b40746b119c}{pivot\+\_\+column\+\_\+name})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_contour___e_t_a4fecac488658fd1b99977ef8e39d5b5b}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!get\+\_\+colors@{get\+\_\+colors}}
+\index{get\+\_\+colors@{get\+\_\+colors}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{get\+\_\+colors}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+get\+\_\+colors (
+\begin{DoxyParamCaption}
+\item[{}]{num\+\_\+colors}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_a4fecac488658fd1b99977ef8e39d5b5b}
+
+
+Definition at line 3 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_aedcf6d62d60dabb84683309eaa07b36c}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!get\+\_\+df\+\_\+from\+\_\+file@{get\+\_\+df\+\_\+from\+\_\+file}}
+\index{get\+\_\+df\+\_\+from\+\_\+file@{get\+\_\+df\+\_\+from\+\_\+file}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{get\+\_\+df\+\_\+from\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+get\+\_\+df\+\_\+from\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{}]{path\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_aedcf6d62d60dabb84683309eaa07b36c}
+
+
+Definition at line 15 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_a90148b8c5b469f8ba98e2d231b2fb45b}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!make\+\_\+contour@{make\+\_\+contour}}
+\index{make\+\_\+contour@{make\+\_\+contour}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{make\+\_\+contour}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+make\+\_\+contour (
+\begin{DoxyParamCaption}
+\item[{}]{df, }
+\item[{}]{df\+\_\+piv}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_a90148b8c5b469f8ba98e2d231b2fb45b}
+\begin{DoxyVerb}Contour plot of date and time data.  Could improve by combining df and df_piv
+
+:param df: dataframe with date and time vectors
+:param df_piv: dataframe with array data
+:return: nothing, plots to screen
+\end{DoxyVerb}
+ 
+
+Definition at line 59 of file Contour\+\_\+\+E\+T.\+py.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_contour___e_t_a90148b8c5b469f8ba98e2d231b2fb45b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_contour___e_t_aa24aa07cccaaf85a6757f39c28f31f8c}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!refactor\+\_\+time@{refactor\+\_\+time}}
+\index{refactor\+\_\+time@{refactor\+\_\+time}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{refactor\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+refactor\+\_\+time (
+\begin{DoxyParamCaption}
+\item[{}]{df}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_aa24aa07cccaaf85a6757f39c28f31f8c}
+\begin{DoxyVerb}Extracts day fraction and year
+
+:param df:
+:return:
+\end{DoxyVerb}
+ 
+
+Definition at line 19 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_a4c29753b8fe8e656b9b45e445b43f691}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!relabel\+\_\+axis@{relabel\+\_\+axis}}
+\index{relabel\+\_\+axis@{relabel\+\_\+axis}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{relabel\+\_\+axis}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+relabel\+\_\+axis (
+\begin{DoxyParamCaption}
+\item[{}]{axis, }
+\item[{}]{plt}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_a4c29753b8fe8e656b9b45e445b43f691}
+\begin{DoxyVerb}Don't like axis format for (hours, years) so redo
+
+:param axis: string, 'x' or 'y'
+:param plt: imshow plot object
+:return: x or y ticks vectors of locs and labels
+\end{DoxyVerb}
+ 
+
+Definition at line 37 of file Contour\+\_\+\+E\+T.\+py.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_contour___e_t_a4c29753b8fe8e656b9b45e445b43f691_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_contour___e_t_ae9bd39a079647783c05dbe6639ef91a5}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!save\+\_\+to\+\_\+csv@{save\+\_\+to\+\_\+csv}}
+\index{save\+\_\+to\+\_\+csv@{save\+\_\+to\+\_\+csv}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{save\+\_\+to\+\_\+csv}]{\setlength{\rightskip}{0pt plus 5cm}def Contour\+\_\+\+E\+T.\+save\+\_\+to\+\_\+csv (
+\begin{DoxyParamCaption}
+\item[{}]{df, }
+\item[{}]{path\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{namespace_contour___e_t_ae9bd39a079647783c05dbe6639ef91a5}
+
+
+Definition at line 33 of file Contour\+\_\+\+E\+T.\+py.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_contour___e_t_a7af933d5513c2211e9381ded4aa968f8}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string Contour\+\_\+\+E\+T.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespace_contour___e_t_a7af933d5513c2211e9381ded4aa968f8}
+
+
+Definition at line 110 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!df@{df}}
+\index{df@{df}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{df}]{\setlength{\rightskip}{0pt plus 5cm}tuple Contour\+\_\+\+E\+T.\+df = {\bf get\+\_\+df\+\_\+from\+\_\+file}({\bf path} + \textquotesingle{}Flag\+Analysis.\+csv\textquotesingle{})}\label{namespace_contour___e_t_ada636549e35711b9f1d5830a945e5472}
+
+
+Definition at line 117 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_afe10e2d562af1d0f4be9cc7b17a68e49}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!df\+\_\+piv@{df\+\_\+piv}}
+\index{df\+\_\+piv@{df\+\_\+piv}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{df\+\_\+piv}]{\setlength{\rightskip}{0pt plus 5cm}tuple Contour\+\_\+\+E\+T.\+df\+\_\+piv = df.\+pivot(index=\textquotesingle{}dates\textquotesingle{}, columns=\textquotesingle{}times\textquotesingle{}, values={\bf pivot\+\_\+column\+\_\+name})}\label{namespace_contour___e_t_afe10e2d562af1d0f4be9cc7b17a68e49}
+
+
+Definition at line 125 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_af326a717be24fa633d2faf0eac687552}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!path@{path}}
+\index{path@{path}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Contour\+\_\+\+E\+T.\+path = \textquotesingle{}..\textbackslash{}\textbackslash{}..\textbackslash{}\textbackslash{}Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201505\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespace_contour___e_t_af326a717be24fa633d2faf0eac687552}
+
+
+Definition at line 115 of file Contour\+\_\+\+E\+T.\+py.
+
+\hypertarget{namespace_contour___e_t_a1d101debf10ad92d73509b40746b119c}{}\index{Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}!pivot\+\_\+column\+\_\+name@{pivot\+\_\+column\+\_\+name}}
+\index{pivot\+\_\+column\+\_\+name@{pivot\+\_\+column\+\_\+name}!Contour\+\_\+\+E\+T@{Contour\+\_\+\+E\+T}}
+\subsubsection[{pivot\+\_\+column\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}string Contour\+\_\+\+E\+T.\+pivot\+\_\+column\+\_\+name = \textquotesingle{}E\+T\textquotesingle{}}\label{namespace_contour___e_t_a1d101debf10ad92d73509b40746b119c}
+
+
+Definition at line 116 of file Contour\+\_\+\+E\+T.\+py.
+

@@ -1,0 +1,233 @@
+\hypertarget{namespaces__post__process_01-_01_comments}{}\section{s\+\_\+post\+\_\+process -\/ Comments Namespace Reference}
+\label{namespaces__post__process_01-_01_comments}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_aa93abb3c2ba5b38151b6fae9743987e1}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a76368c115dbbbd72360ddbd4ec4a9a04}{release\+\_\+start} = dt.\+datetime(2013, 9, 12, 14)
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a52f70ed51d091a8626e86e98b3375f39}{analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=\hyperlink{namespaces__post__process_01-_01_comments_a76368c115dbbbd72360ddbd4ec4a9a04}{release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a9323e6fee869aa9c51bc49305dcb973d}{analysis\+\_\+start} = min(\hyperlink{namespaces__post__process_01-_01_comments_a52f70ed51d091a8626e86e98b3375f39}{analysis\+\_\+start\+\_\+range})
+\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_a443ac998e99f88439a5522c68a86609f}{path} = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201407\textbackslash{}\textbackslash{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em path for raw data\+: \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path for F\+O\+R\+T\+R\+A\+N output\+: \end{DoxyCompactList}\item 
+string \hyperlink{namespaces__post__process_01-_01_comments_a755936030fef486b5e163765fe6030b8}{fname} = \textquotesingle{}palldata.\+txt\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Read p file. \end{DoxyCompactList}\item 
+\hyperlink{namespaces__post__process_01-_01_comments_a44e382ad617792a5ed02be95da593433}{pathname} = \hyperlink{namespaces__post__process_01-_01_comments_a443ac998e99f88439a5522c68a86609f}{path}+\hyperlink{namespaces__post__process_01-_01_comments_a755936030fef486b5e163765fe6030b8}{fname}
+\item 
+\hyperlink{namespaces__post__process_01-_01_comments_a9ad05e10331e51befb7fbd20adefb30e}{kdc} = True
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a043c82fbb0106ffd9805f3c107892cf5}{df\+\_\+p}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_ac48c9e765f3ad2bfb2f1dd1af5b16598}{df\+\_\+q}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a5cad3f0b3385326f66c3ea7402ac4b4b}{ts\+\_\+maa} = \hyperlink{namespaces__post__process_01-_01_comments_a043c82fbb0106ffd9805f3c107892cf5}{df\+\_\+p}\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em variables on q file (like qalldata\+\_\+1402.\+xlsx)\+: yr dy t xmois ws solar airtemp def avail xpt e5 h5 e6 cv ep E\+T \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a816aaeb2a13f356b17e012a7e77253a7}{df\+\_\+c}
+\begin{DoxyCompactList}\small\item\em ep D\+O\+E\+S depend on fortran so this should be in post ep\+\_\+day if ...solar and ep $>$ 0 (use solar $>$1 for consistency?) ep\+\_\+day = ep, else 0 B\+U\+T ep only !=0 when (day.\+gt.\+95.\+and.\+day.\+lt.\+316)!! \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a799dd3cc5b8e24283cbce5d20d97168b}{df\+\_\+hh}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a1b2d87778a264a8cbd089338b879c0ad}{df\+\_\+day\+\_\+mn} = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Get summaries ts\+\_\+maa = df\+\_\+p\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) need mean of E\+T for daily E\+T, not sum df\+\_\+day\+\_\+mn = df\+\_\+hh\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) df\+\_\+day\+\_\+sum = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}sum\textquotesingle{}) df\+\_\+day = df\+\_\+day\+\_\+sum.\+join(df\+\_\+day\+\_\+mn) \end{DoxyCompactList}\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a171d51f6d9fd3e0e8100d8a932b24f3d}{df\+\_\+day\+\_\+sum} = \hyperlink{namespaces__post__process_01-_01_comments_a799dd3cc5b8e24283cbce5d20d97168b}{df\+\_\+hh}\mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a6b0f3b1ea6c915417d9095c71f6a6d37}{df\+\_\+day} = df\+\_\+day\+\_\+mn.\+join(\hyperlink{namespaces__post__process_01-_01_comments_a171d51f6d9fd3e0e8100d8a932b24f3d}{df\+\_\+day\+\_\+sum})
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a7e79dd26fcae372621057462f779d8cc}{df\+\_\+month\+\_\+mn} = \hyperlink{namespaces__post__process_01-_01_comments_a6b0f3b1ea6c915417d9095c71f6a6d37}{df\+\_\+day}\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespaces__post__process_01-_01_comments_a6b3103e90669e297e65f84e9223e0d02}{df\+\_\+month\+\_\+sum} = df\+\_\+day.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}
+\item 
+tuple \hyperlink{namespaces__post__process_01-_01_comments_a0c297e8e03d58f418d0c814d57970854}{df\+\_\+month} = df\+\_\+month\+\_\+sum.\+join(\hyperlink{namespaces__post__process_01-_01_comments_a7e79dd26fcae372621057462f779d8cc}{df\+\_\+month\+\_\+mn})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaces__post__process_01-_01_comments_aa93abb3c2ba5b38151b6fae9743987e1}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process -\/ Comments.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespaces__post__process_01-_01_comments_aa93abb3c2ba5b38151b6fae9743987e1}
+
+
+Definition at line 8 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a9323e6fee869aa9c51bc49305dcb973d}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!analysis\+\_\+start@{analysis\+\_\+start}}
+\index{analysis\+\_\+start@{analysis\+\_\+start}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{analysis\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+analysis\+\_\+start = min({\bf analysis\+\_\+start\+\_\+range})}\label{namespaces__post__process_01-_01_comments_a9323e6fee869aa9c51bc49305dcb973d}
+
+
+Definition at line 24 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a52f70ed51d091a8626e86e98b3375f39}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}}
+\index{analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{analysis\+\_\+start\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+analysis\+\_\+start\+\_\+range = pd.\+date\+\_\+range(end={\bf release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})}\label{namespaces__post__process_01-_01_comments_a52f70ed51d091a8626e86e98b3375f39}
+
+
+Definition at line 23 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a816aaeb2a13f356b17e012a7e77253a7}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+c@{df\+\_\+c}}
+\index{df\+\_\+c@{df\+\_\+c}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+c}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+c}\label{namespaces__post__process_01-_01_comments_a816aaeb2a13f356b17e012a7e77253a7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(\textcolor{stringliteral}{'CALCS.csv'},
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        index\_col=\textcolor{stringliteral}{'TIMESTAMP'})
+\end{DoxyCode}
+
+
+ep D\+O\+E\+S depend on fortran so this should be in post ep\+\_\+day if ...solar and ep $>$ 0 (use solar $>$1 for consistency?) ep\+\_\+day = ep, else 0 B\+U\+T ep only !=0 when (day.\+gt.\+95.\+and.\+day.\+lt.\+316)!! 
+
+
+
+Definition at line 122 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a6b0f3b1ea6c915417d9095c71f6a6d37}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+day@{df\+\_\+day}}
+\index{df\+\_\+day@{df\+\_\+day}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+day}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day = df\+\_\+day\+\_\+mn.\+join({\bf df\+\_\+day\+\_\+sum})}\label{namespaces__post__process_01-_01_comments_a6b0f3b1ea6c915417d9095c71f6a6d37}
+
+
+Definition at line 150 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a1b2d87778a264a8cbd089338b879c0ad}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+day\+\_\+mn@{df\+\_\+day\+\_\+mn}}
+\index{df\+\_\+day\+\_\+mn@{df\+\_\+day\+\_\+mn}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+day\+\_\+mn}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day\+\_\+mn = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}}\label{namespaces__post__process_01-_01_comments_a1b2d87778a264a8cbd089338b879c0ad}
+
+
+Get summaries ts\+\_\+maa = df\+\_\+p\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) need mean of E\+T for daily E\+T, not sum df\+\_\+day\+\_\+mn = df\+\_\+hh\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}mean\textquotesingle{}) df\+\_\+day\+\_\+sum = df\+\_\+hh.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}.resample(\textquotesingle{}D\textquotesingle{}, how=\textquotesingle{}sum\textquotesingle{}) df\+\_\+day = df\+\_\+day\+\_\+sum.\+join(df\+\_\+day\+\_\+mn) 
+
+
+
+Definition at line 148 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a171d51f6d9fd3e0e8100d8a932b24f3d}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+day\+\_\+sum@{df\+\_\+day\+\_\+sum}}
+\index{df\+\_\+day\+\_\+sum@{df\+\_\+day\+\_\+sum}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+day\+\_\+sum}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+day\+\_\+sum = {\bf df\+\_\+hh}\mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}\mbox{]}}\label{namespaces__post__process_01-_01_comments_a171d51f6d9fd3e0e8100d8a932b24f3d}
+
+
+Definition at line 149 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a799dd3cc5b8e24283cbce5d20d97168b}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+hh@{df\+\_\+hh}}
+\index{df\+\_\+hh@{df\+\_\+hh}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+hh}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+hh}\label{namespaces__post__process_01-_01_comments_a799dd3cc5b8e24283cbce5d20d97168b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.DataFrame(df\_q, index=df\_q.index, columns=[\textcolor{stringliteral}{'yr'}, \textcolor{stringliteral}{'dy'}, \textcolor{stringliteral}{'t'}, \textcolor{stringliteral}{'date'}, \textcolor{stringliteral}{'precip\_corrected'},
+2                         \textcolor{stringliteral}{'soil\_temp\_smoothed'},
+3                         \textcolor{stringliteral}{'soil\_heat\_flux8\_1'}, \textcolor{stringliteral}{'soil\_heat\_flux8\_2'}, \textcolor{stringliteral}{'soil\_moisture4'}, \textcolor{stringliteral}{'soil\_moisture20'},
+4                         \textcolor{stringliteral}{'wind\_speed'}, \textcolor{stringliteral}{'solar'}, \textcolor{stringliteral}{'REBS'}, \textcolor{stringliteral}{'Rn'}, \textcolor{stringliteral}{'mn\_Rn'}, \textcolor{stringliteral}{'avail'}, \textcolor{stringliteral}{'G'}, \textcolor{stringliteral}{'airtemp'},
+5                         \textcolor{stringliteral}{'RH'}, \textcolor{stringliteral}{'DTW'}, \textcolor{stringliteral}{'LE\_day\_and\_filled'}, \textcolor{stringliteral}{'ET\_est'}])
+\end{DoxyCode}
+
+
+Definition at line 134 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a0c297e8e03d58f418d0c814d57970854}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+month@{df\+\_\+month}}
+\index{df\+\_\+month@{df\+\_\+month}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+month}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month = df\+\_\+month\+\_\+sum.\+join({\bf df\+\_\+month\+\_\+mn})}\label{namespaces__post__process_01-_01_comments_a0c297e8e03d58f418d0c814d57970854}
+
+
+Definition at line 155 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a7e79dd26fcae372621057462f779d8cc}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+month\+\_\+mn@{df\+\_\+month\+\_\+mn}}
+\index{df\+\_\+month\+\_\+mn@{df\+\_\+month\+\_\+mn}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+month\+\_\+mn}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month\+\_\+mn = {\bf df\+\_\+day}\mbox{[}\textquotesingle{}D\+T\+W\textquotesingle{}\mbox{]}}\label{namespaces__post__process_01-_01_comments_a7e79dd26fcae372621057462f779d8cc}
+
+
+Definition at line 153 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a6b3103e90669e297e65f84e9223e0d02}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+month\+\_\+sum@{df\+\_\+month\+\_\+sum}}
+\index{df\+\_\+month\+\_\+sum@{df\+\_\+month\+\_\+sum}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+month\+\_\+sum}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+month\+\_\+sum = df\+\_\+day.\+loc\mbox{[}\+:, \mbox{[}\textquotesingle{}precip\+\_\+corrected\textquotesingle{}, \textquotesingle{}E\+T\+\_\+est\textquotesingle{}\mbox{]}\mbox{]}}\label{namespaces__post__process_01-_01_comments_a6b3103e90669e297e65f84e9223e0d02}
+
+
+Definition at line 154 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a043c82fbb0106ffd9805f3c107892cf5}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+p@{df\+\_\+p}}
+\index{df\+\_\+p@{df\+\_\+p}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+p}\label{namespaces__post__process_01-_01_comments_a043c82fbb0106ffd9805f3c107892cf5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(pathname, delim\_whitespace=\textcolor{keyword}{True}, na\_values=[-99999, 99999, 9999, 6999], parse\_dates=[[1, 2, 3
+      ]],
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        date\_parser=et.doy\_parser, index\_col=\textcolor{stringliteral}{'yr\_dy\_t'})
+\end{DoxyCode}
+
+
+Definition at line 36 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_ac48c9e765f3ad2bfb2f1dd1af5b16598}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!df\+\_\+q@{df\+\_\+q}}
+\index{df\+\_\+q@{df\+\_\+q}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{df\+\_\+q}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+df\+\_\+q}\label{namespaces__post__process_01-_01_comments_ac48c9e765f3ad2bfb2f1dd1af5b16598}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = pd.read\_csv(pathname, delim\_whitespace=\textcolor{keyword}{True}, na\_values=[-99999, 99999, 9999, 6999], parse\_dates=[[1, 2, 3
+      ]],
+2                        keep\_date\_col=kdc, warn\_bad\_lines=\textcolor{keyword}{True}, error\_bad\_lines=\textcolor{keyword}{False},
+3                        date\_parser=et.doy\_parser, index\_col=\textcolor{stringliteral}{'yr\_dy\_t'})
+\end{DoxyCode}
+
+
+Definition at line 63 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a755936030fef486b5e163765fe6030b8}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!fname@{fname}}
+\index{fname@{fname}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{fname}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process -\/ Comments.\+fname = \textquotesingle{}palldata.\+txt\textquotesingle{}}\label{namespaces__post__process_01-_01_comments_a755936030fef486b5e163765fe6030b8}
+
+
+Read p file. 
+
+list of column names on p \& q df\textquotesingle{}s\+: names=\mbox{[}\textquotesingle{}yr\textquotesingle{}, \textquotesingle{}dy\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}xmois\textquotesingle{}, \textquotesingle{}ws\textquotesingle{}, \textquotesingle{}solar\textquotesingle{}, \textquotesingle{}airtemp\textquotesingle{}, \textquotesingle{}def\textquotesingle{}, \textquotesingle{}avail\textquotesingle{}, \textquotesingle{}xpt\textquotesingle{}, \textquotesingle{}e5\textquotesingle{}, \textquotesingle{}h5\textquotesingle{}, \textquotesingle{}e6\textquotesingle{}, \textquotesingle{}cv\textquotesingle{}, \textquotesingle{}ep\textquotesingle{}, \textquotesingle{}E\+T\textquotesingle{}\mbox{]}
+
+Get centered 141-\/pt moving median alpha. Read q file 
+
+Definition at line 33 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a9ad05e10331e51befb7fbd20adefb30e}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!kdc@{kdc}}
+\index{kdc@{kdc}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{kdc}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process -\/ Comments.\+kdc = True}\label{namespaces__post__process_01-_01_comments_a9ad05e10331e51befb7fbd20adefb30e}
+
+
+Definition at line 35 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a443ac998e99f88439a5522c68a86609f}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!path@{path}}
+\index{path@{path}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+post\+\_\+process -\/ Comments.\+path = \textquotesingle{}I\+:\textbackslash{}\textbackslash{}\+A\+L\+L\textbackslash{}\textbackslash{}\+Tampa\+E\+T\textbackslash{}\textbackslash{}\+Starkey\textbackslash{}\textbackslash{}process\textbackslash{}\textbackslash{}201407\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespaces__post__process_01-_01_comments_a443ac998e99f88439a5522c68a86609f}
+
+
+path for raw data\+: \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path for F\+O\+R\+T\+R\+A\+N output\+: 
+
+
+
+Definition at line 29 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a44e382ad617792a5ed02be95da593433}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!pathname@{pathname}}
+\index{pathname@{pathname}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{pathname}]{\setlength{\rightskip}{0pt plus 5cm}s\+\_\+post\+\_\+process -\/ Comments.\+pathname = {\bf path}+{\bf fname}}\label{namespaces__post__process_01-_01_comments_a44e382ad617792a5ed02be95da593433}
+
+
+Definition at line 34 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a76368c115dbbbd72360ddbd4ec4a9a04}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!release\+\_\+start@{release\+\_\+start}}
+\index{release\+\_\+start@{release\+\_\+start}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{release\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple s\+\_\+post\+\_\+process -\/ Comments.\+release\+\_\+start = dt.\+datetime(2013, 9, 12, 14)}\label{namespaces__post__process_01-_01_comments_a76368c115dbbbd72360ddbd4ec4a9a04}
+
+
+Program run time options\+: 
+
+date for data release\+: 
+
+Definition at line 21 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+
+\hypertarget{namespaces__post__process_01-_01_comments_a5cad3f0b3385326f66c3ea7402ac4b4b}{}\index{s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}!ts\+\_\+maa@{ts\+\_\+maa}}
+\index{ts\+\_\+maa@{ts\+\_\+maa}!s\+\_\+post\+\_\+process -\/ Comments@{s\+\_\+post\+\_\+process -\/ Comments}}
+\subsubsection[{ts\+\_\+maa}]{\setlength{\rightskip}{0pt plus 5cm}list s\+\_\+post\+\_\+process -\/ Comments.\+ts\+\_\+maa = {\bf df\+\_\+p}\mbox{[}\textquotesingle{}alpha\+\_\+rollmed\textquotesingle{}\mbox{]}}\label{namespaces__post__process_01-_01_comments_a5cad3f0b3385326f66c3ea7402ac4b4b}
+
+
+variables on q file (like qalldata\+\_\+1402.\+xlsx)\+: yr dy t xmois ws solar airtemp def avail xpt e5 h5 e6 cv ep E\+T 
+
+
+
+Definition at line 79 of file s\+\_\+post\+\_\+process -\/ Comments.\+py.
+

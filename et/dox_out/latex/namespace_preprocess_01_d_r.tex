@@ -1,0 +1,426 @@
+\hypertarget{namespace_preprocess_01_d_r}{}\section{Preprocess D\+R Namespace Reference}
+\label{namespace_preprocess_01_d_r}\index{Preprocess D\+R@{Preprocess D\+R}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_a28ebd37638b2a3edddcef38b03de3d9e}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \textquotesingle{}mturtora\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. \end{DoxyCompactList}\item 
+string \hyperlink{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{station} = \textquotesingle{}d\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Program run time options\+: \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ae8d2848548745ca8cb3fff24f95b8265}{release\+\_\+start} = dt.\+datetime(2009, 11, 20, 13, 30)
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a7026d20c2cef287201c48fdf79c0e8f7}{release\+\_\+end} = dt.\+datetime(2014, 8, 19, 10, 30)
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a6349ca51aac5eadefc205154d717c139}{descriptive\+\_\+echo} = True
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ad7dfeae6dec3bc6a6c9446124ceafdc3}{gap\+\_\+anal} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{make\+\_\+gap\+\_\+plots} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_aae343c994d5743a749e85f21f6ed62a2}{make\+\_\+calc\+\_\+plots} = False
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a35685e7b260e2e5876d1b3b56f3e3677}{csv\+\_\+out} = True
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ad43a2a5b2765a6fdb69bd61e0617774a}{analysis\+\_\+start\+\_\+range} = pd.\+date\+\_\+range(end=\hyperlink{namespace_preprocess_01_d_r_ae8d2848548745ca8cb3fff24f95b8265}{release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a21ae2b6d07fc5f6bee079d47f29346d4}{analysis\+\_\+start} = min(\hyperlink{namespace_preprocess_01_d_r_ad43a2a5b2765a6fdb69bd61e0617774a}{analysis\+\_\+start\+\_\+range})
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{path} = \textquotesingle{}..\textbackslash{}\textbackslash{}Dead\+River\textbackslash{}\textbackslash{}\+Raw\textbackslash{}\textbackslash{}\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em \begin{DoxyVerb}path = '..\\Starkey\\RAW2\\'
+\end{DoxyVerb}
+ path = \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}Working\textbackslash{}\textquotesingle{} \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a561be9ad8b22bc2802b0020d8b239176}{et\+\_\+files} = os.\+listdir(\hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{path})
+\item 
+int \hyperlink{namespace_preprocess_01_d_r_a9404d186af19463704b0d7514d09c28a}{C\+Rthousand\+\_\+cnt} = 0
+\item 
+int \hyperlink{namespace_preprocess_01_d_r_a50b6ef7f8682b5031dc5857112fcab2d}{C\+Rten\+X\+\_\+cnt} = 0
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}{f} = open(\hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{path} + fname, \textquotesingle{}r\textquotesingle{})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_adf993ed19a62ed0125e7086027d99260}{line} = f.\+readline()
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{C\+Rthousand\+\_\+span} = et.\+read\+\_\+\+C\+Rthousand\+\_\+file(\hyperlink{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}{f}, fname)
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_a5dd9db5e04103125b0e1a71ee37e106b}{date\+\_\+str} = \hyperlink{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_afe9443eef87a2a031c1106acc31cb166}{time\+\_\+str} = \hyperlink{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a026e495ab57bb5f630a98c27cf13c1aa}{stop\+\_\+time}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a5972ec24a3edf386f881a64fc2e47ed5}{C\+Rthousand\+\_\+dict} = \hyperlink{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{C\+Rthousand\+\_\+span}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a28a0d49fbacac27b8de4fd609043b742}{skip} = None
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{df\+\_\+type} = \textquotesingle{}rad\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a9c3f672064dcd45d53eb354141ad8dde}{C\+Rten\+X\+\_\+span} = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file(\hyperlink{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}{f}, fname, \hyperlink{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{df\+\_\+type}, \hyperlink{namespace_preprocess_01_d_r_a28a0d49fbacac27b8de4fd609043b742}{skip})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a5924b2b745d8569255d35551891b9b4f}{cr\+\_\+date}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a1f133b54c3941799c8821d6d7b6a5d9c}{C\+Rten\+X\+\_\+dict} = \hyperlink{namespace_preprocess_01_d_r_a9c3f672064dcd45d53eb354141ad8dde}{C\+Rten\+X\+\_\+span}
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_ac21cb069e78807e25e0ea127740544c8}{f\+\_\+com}
+\begin{DoxyCompactList}\small\item\em dictionaries of date ranges built, now concatenate data for all files back to earliest files needed \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}{s} = eval(fl)
+\item 
+list \hyperlink{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}{flist} = \mbox{[}\hyperlink{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}{s}\mbox{[}j\mbox{]} for j in range(len(\hyperlink{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}{s}))\mbox{]}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{df\+\_\+temp} = et.\+concat\+\_\+df(\hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{path}, \hyperlink{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}{flist}, \hyperlink{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{df\+\_\+type}, \hyperlink{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{station})
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{df\+\_\+ec} = \hyperlink{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{df\+\_\+temp}
+\begin{DoxyCompactList}\small\item\em limit data to analysis date range \end{DoxyCompactList}\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a416dccd46e76a20b33904f972fe464df}{df\+\_\+ec\+\_\+all} = et.\+concat\+\_\+df(\hyperlink{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{path}, \hyperlink{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}{flist}, \hyperlink{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{df\+\_\+type}, \hyperlink{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{station}, \textquotesingle{}dat\textquotesingle{})
+\item 
+\hyperlink{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}{df\+\_\+met} = \hyperlink{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{df\+\_\+temp}
+\item 
+\hyperlink{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}{df\+\_\+rad} = \hyperlink{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{df\+\_\+temp}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a00e73208d968dff947b8535a5c1fb9d9}{ec\+\_\+boo} = pd.\+notnull(\hyperlink{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{df\+\_\+ec}\mbox{[}\textquotesingle{}airtemp\textquotesingle{}\mbox{]})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a2ba8e3d62d3eedd973e7dcb3830a2445}{ec\+\_\+all\+\_\+boo} = pd.\+notnull(df\+\_\+ec\+\_\+all.\+loc\mbox{[}\+:, 39\mbox{]})
+\item 
+string \hyperlink{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{dtype} = \textquotesingle{}met\textquotesingle{}
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_af20162928bf03c462be487f066a127a2}{df\+\_\+met\+\_\+gaps} = et.\+gap(\hyperlink{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}{df\+\_\+met}, \hyperlink{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{dtype}, \hyperlink{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_ad19ea2575c12e287c8750139b04267ad}{df\+\_\+rad\+\_\+gaps} = et.\+gap(\hyperlink{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}{df\+\_\+rad}, \hyperlink{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{dtype}, \hyperlink{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a6d9628d1772f7649cb01ee5014068f0b}{df\+\_\+ec\+\_\+gaps} = et.\+gap(\hyperlink{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{df\+\_\+ec}, \hyperlink{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{dtype}, \hyperlink{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{make\+\_\+gap\+\_\+plots})
+\item 
+tuple \hyperlink{namespace_preprocess_01_d_r_a07df7a20436d9ce67a065b7180c3053e}{df\+\_\+calc} = et.\+s\+\_\+met\+\_\+calcs(\hyperlink{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}{df\+\_\+met}, \hyperlink{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}{df\+\_\+rad}, \hyperlink{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{df\+\_\+ec}, \hyperlink{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{station}, \hyperlink{namespace_preprocess_01_d_r_aae343c994d5743a749e85f21f6ed62a2}{make\+\_\+calc\+\_\+plots})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespace_preprocess_01_d_r_a28ebd37638b2a3edddcef38b03de3d9e}{}\index{Preprocess D\+R@{Preprocess D\+R}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string Preprocess D\+R.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}mturtora\textquotesingle{}}\label{namespace_preprocess_01_d_r_a28ebd37638b2a3edddcef38b03de3d9e}
+
+
+Main program start I\+: path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}\textquotesingle{}. 
+
+Next Data Release Start Date/\+Time\+: previous release ends\+: 9/12/13 1330 but, need 70 before start time for moving average alpha 48/day, Use pd.\+date\+\_\+range to get backward time 
+
+Definition at line 16 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a21ae2b6d07fc5f6bee079d47f29346d4}{}\index{Preprocess D\+R@{Preprocess D\+R}!analysis\+\_\+start@{analysis\+\_\+start}}
+\index{analysis\+\_\+start@{analysis\+\_\+start}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{analysis\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+analysis\+\_\+start = min({\bf analysis\+\_\+start\+\_\+range})}\label{namespace_preprocess_01_d_r_a21ae2b6d07fc5f6bee079d47f29346d4}
+
+
+Definition at line 50 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ad43a2a5b2765a6fdb69bd61e0617774a}{}\index{Preprocess D\+R@{Preprocess D\+R}!analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}}
+\index{analysis\+\_\+start\+\_\+range@{analysis\+\_\+start\+\_\+range}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{analysis\+\_\+start\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+analysis\+\_\+start\+\_\+range = pd.\+date\+\_\+range(end={\bf release\+\_\+start}, periods=70, freq=\textquotesingle{}30min\textquotesingle{})}\label{namespace_preprocess_01_d_r_ad43a2a5b2765a6fdb69bd61e0617774a}
+
+
+Definition at line 49 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a5924b2b745d8569255d35551891b9b4f}{}\index{Preprocess D\+R@{Preprocess D\+R}!cr\+\_\+date@{cr\+\_\+date}}
+\index{cr\+\_\+date@{cr\+\_\+date}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{cr\+\_\+date}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+cr\+\_\+date}\label{namespace_preprocess_01_d_r_a5924b2b745d8569255d35551891b9b4f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dt.datetime(CRtenX\_span[\textcolor{stringliteral}{'end\_year'}], 1, 1, CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100,
+2                                       CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] - (100 * (CRtenX\_span[\textcolor{stringliteral}{'end\_time'}] / 100)))
+\end{DoxyCode}
+
+
+Definition at line 116 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a50b6ef7f8682b5031dc5857112fcab2d}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}}
+\index{C\+Rten\+X\+\_\+cnt@{C\+Rten\+X\+\_\+cnt}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rten\+X\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Preprocess D\+R.\+C\+Rten\+X\+\_\+cnt = 0}\label{namespace_preprocess_01_d_r_a50b6ef7f8682b5031dc5857112fcab2d}
+
+
+Definition at line 60 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a1f133b54c3941799c8821d6d7b6a5d9c}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}}
+\index{C\+Rten\+X\+\_\+dict@{C\+Rten\+X\+\_\+dict}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rten\+X\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+C\+Rten\+X\+\_\+dict = {\bf C\+Rten\+X\+\_\+span}}\label{namespace_preprocess_01_d_r_a1f133b54c3941799c8821d6d7b6a5d9c}
+
+
+Definition at line 123 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a9c3f672064dcd45d53eb354141ad8dde}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}}
+\index{C\+Rten\+X\+\_\+span@{C\+Rten\+X\+\_\+span}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rten\+X\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+C\+Rten\+X\+\_\+span = et.\+read\+\_\+\+C\+Rten\+X\+\_\+file({\bf f}, fname, {\bf df\+\_\+type}, {\bf skip})}\label{namespace_preprocess_01_d_r_a9c3f672064dcd45d53eb354141ad8dde}
+
+
+Definition at line 114 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a9404d186af19463704b0d7514d09c28a}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}}
+\index{C\+Rthousand\+\_\+cnt@{C\+Rthousand\+\_\+cnt}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rthousand\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Preprocess D\+R.\+C\+Rthousand\+\_\+cnt = 0}\label{namespace_preprocess_01_d_r_a9404d186af19463704b0d7514d09c28a}
+
+
+Definition at line 59 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a5972ec24a3edf386f881a64fc2e47ed5}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}}
+\index{C\+Rthousand\+\_\+dict@{C\+Rthousand\+\_\+dict}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rthousand\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+C\+Rthousand\+\_\+dict = {\bf C\+Rthousand\+\_\+span}}\label{namespace_preprocess_01_d_r_a5972ec24a3edf386f881a64fc2e47ed5}
+
+
+Definition at line 91 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}{}\index{Preprocess D\+R@{Preprocess D\+R}!C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}}
+\index{C\+Rthousand\+\_\+span@{C\+Rthousand\+\_\+span}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{C\+Rthousand\+\_\+span}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+C\+Rthousand\+\_\+span = et.\+read\+\_\+\+C\+Rthousand\+\_\+file({\bf f}, fname)}\label{namespace_preprocess_01_d_r_a6d31701846ffc5afde0480e8237a7cf3}
+
+
+Definition at line 82 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a35685e7b260e2e5876d1b3b56f3e3677}{}\index{Preprocess D\+R@{Preprocess D\+R}!csv\+\_\+out@{csv\+\_\+out}}
+\index{csv\+\_\+out@{csv\+\_\+out}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{csv\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+csv\+\_\+out = True}\label{namespace_preprocess_01_d_r_a35685e7b260e2e5876d1b3b56f3e3677}
+
+
+Definition at line 47 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a5dd9db5e04103125b0e1a71ee37e106b}{}\index{Preprocess D\+R@{Preprocess D\+R}!date\+\_\+str@{date\+\_\+str}}
+\index{date\+\_\+str@{date\+\_\+str}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{date\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+date\+\_\+str = {\bf C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}}\label{namespace_preprocess_01_d_r_a5dd9db5e04103125b0e1a71ee37e106b}
+
+
+Definition at line 83 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a6349ca51aac5eadefc205154d717c139}{}\index{Preprocess D\+R@{Preprocess D\+R}!descriptive\+\_\+echo@{descriptive\+\_\+echo}}
+\index{descriptive\+\_\+echo@{descriptive\+\_\+echo}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{descriptive\+\_\+echo}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+descriptive\+\_\+echo = True}\label{namespace_preprocess_01_d_r_a6349ca51aac5eadefc205154d717c139}
+
+
+Definition at line 40 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a07df7a20436d9ce67a065b7180c3053e}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+calc@{df\+\_\+calc}}
+\index{df\+\_\+calc@{df\+\_\+calc}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+calc}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+calc = et.\+s\+\_\+met\+\_\+calcs({\bf df\+\_\+met}, {\bf df\+\_\+rad}, {\bf df\+\_\+ec}, {\bf station}, {\bf make\+\_\+calc\+\_\+plots})}\label{namespace_preprocess_01_d_r_a07df7a20436d9ce67a065b7180c3053e}
+
+
+Definition at line 285 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+ec@{df\+\_\+ec}}
+\index{df\+\_\+ec@{df\+\_\+ec}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+ec}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+ec = {\bf df\+\_\+temp}}\label{namespace_preprocess_01_d_r_a6afbb82db5a6278359661ab35a56be0b}
+
+
+limit data to analysis date range 
+
+
+
+Definition at line 189 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a416dccd46e76a20b33904f972fe464df}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+ec\+\_\+all@{df\+\_\+ec\+\_\+all}}
+\index{df\+\_\+ec\+\_\+all@{df\+\_\+ec\+\_\+all}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+ec\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+ec\+\_\+all = et.\+concat\+\_\+df({\bf path}, {\bf flist}, {\bf df\+\_\+type}, {\bf station}, \textquotesingle{}dat\textquotesingle{})}\label{namespace_preprocess_01_d_r_a416dccd46e76a20b33904f972fe464df}
+
+
+Definition at line 191 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a6d9628d1772f7649cb01ee5014068f0b}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+ec\+\_\+gaps@{df\+\_\+ec\+\_\+gaps}}
+\index{df\+\_\+ec\+\_\+gaps@{df\+\_\+ec\+\_\+gaps}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+ec\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+ec\+\_\+gaps = et.\+gap({\bf df\+\_\+ec}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_preprocess_01_d_r_a6d9628d1772f7649cb01ee5014068f0b}
+
+
+Definition at line 280 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+met@{df\+\_\+met}}
+\index{df\+\_\+met@{df\+\_\+met}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+met}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+df\+\_\+met = {\bf df\+\_\+temp}}\label{namespace_preprocess_01_d_r_a76371d4dc94517f100a4b6c2a44a66e9}
+
+
+Definition at line 193 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_af20162928bf03c462be487f066a127a2}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+met\+\_\+gaps@{df\+\_\+met\+\_\+gaps}}
+\index{df\+\_\+met\+\_\+gaps@{df\+\_\+met\+\_\+gaps}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+met\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+met\+\_\+gaps = et.\+gap({\bf df\+\_\+met}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_preprocess_01_d_r_af20162928bf03c462be487f066a127a2}
+
+
+Definition at line 272 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+rad@{df\+\_\+rad}}
+\index{df\+\_\+rad@{df\+\_\+rad}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+rad}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+df\+\_\+rad = {\bf df\+\_\+temp}}\label{namespace_preprocess_01_d_r_ad42c5899e061416e7420e073b0a4eae4}
+
+
+Definition at line 195 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ad19ea2575c12e287c8750139b04267ad}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+rad\+\_\+gaps@{df\+\_\+rad\+\_\+gaps}}
+\index{df\+\_\+rad\+\_\+gaps@{df\+\_\+rad\+\_\+gaps}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+rad\+\_\+gaps}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+rad\+\_\+gaps = et.\+gap({\bf df\+\_\+rad}, {\bf dtype}, {\bf make\+\_\+gap\+\_\+plots})}\label{namespace_preprocess_01_d_r_ad19ea2575c12e287c8750139b04267ad}
+
+
+Definition at line 276 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+temp@{df\+\_\+temp}}
+\index{df\+\_\+temp@{df\+\_\+temp}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+temp}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+df\+\_\+temp = et.\+concat\+\_\+df({\bf path}, {\bf flist}, {\bf df\+\_\+type}, {\bf station})}\label{namespace_preprocess_01_d_r_a8170ab278e5e65c4c35be6d3eaa3f5b9}
+
+
+Definition at line 183 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}{}\index{Preprocess D\+R@{Preprocess D\+R}!df\+\_\+type@{df\+\_\+type}}
+\index{df\+\_\+type@{df\+\_\+type}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{df\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}string Preprocess D\+R.\+df\+\_\+type = \textquotesingle{}rad\textquotesingle{}}\label{namespace_preprocess_01_d_r_a8179dd2e8d60a0dc3d9dff36cc8ea97e}
+
+
+Definition at line 106 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}{}\index{Preprocess D\+R@{Preprocess D\+R}!dtype@{dtype}}
+\index{dtype@{dtype}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{dtype}]{\setlength{\rightskip}{0pt plus 5cm}string Preprocess D\+R.\+dtype = \textquotesingle{}met\textquotesingle{}}\label{namespace_preprocess_01_d_r_aef77e329fc2c79a858516307ae919e76}
+
+
+Definition at line 271 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a2ba8e3d62d3eedd973e7dcb3830a2445}{}\index{Preprocess D\+R@{Preprocess D\+R}!ec\+\_\+all\+\_\+boo@{ec\+\_\+all\+\_\+boo}}
+\index{ec\+\_\+all\+\_\+boo@{ec\+\_\+all\+\_\+boo}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{ec\+\_\+all\+\_\+boo}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+ec\+\_\+all\+\_\+boo = pd.\+notnull(df\+\_\+ec\+\_\+all.\+loc\mbox{[}\+:, 39\mbox{]})}\label{namespace_preprocess_01_d_r_a2ba8e3d62d3eedd973e7dcb3830a2445}
+
+
+Definition at line 242 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a00e73208d968dff947b8535a5c1fb9d9}{}\index{Preprocess D\+R@{Preprocess D\+R}!ec\+\_\+boo@{ec\+\_\+boo}}
+\index{ec\+\_\+boo@{ec\+\_\+boo}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{ec\+\_\+boo}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+ec\+\_\+boo = pd.\+notnull({\bf df\+\_\+ec}\mbox{[}\textquotesingle{}airtemp\textquotesingle{}\mbox{]})}\label{namespace_preprocess_01_d_r_a00e73208d968dff947b8535a5c1fb9d9}
+
+
+Definition at line 241 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a561be9ad8b22bc2802b0020d8b239176}{}\index{Preprocess D\+R@{Preprocess D\+R}!et\+\_\+files@{et\+\_\+files}}
+\index{et\+\_\+files@{et\+\_\+files}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{et\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+et\+\_\+files = os.\+listdir({\bf path})}\label{namespace_preprocess_01_d_r_a561be9ad8b22bc2802b0020d8b239176}
+
+
+Definition at line 58 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}{}\index{Preprocess D\+R@{Preprocess D\+R}!f@{f}}
+\index{f@{f}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+f = open({\bf path} + fname, \textquotesingle{}r\textquotesingle{})}\label{namespace_preprocess_01_d_r_a42c175efe72eeb61c918cffc912baa69}
+
+
+Definition at line 77 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ac21cb069e78807e25e0ea127740544c8}{}\index{Preprocess D\+R@{Preprocess D\+R}!f\+\_\+com@{f\+\_\+com}}
+\index{f\+\_\+com@{f\+\_\+com}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{f\+\_\+com}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+f\+\_\+com}\label{namespace_preprocess_01_d_r_ac21cb069e78807e25e0ea127740544c8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [\textcolor{stringliteral}{"CRtenX\_dict[(CRtenX\_dict.loc[:, 'df\_type'] == 'met')]['file\_name']"},
+2                  \textcolor{stringliteral}{"CRtenX\_dict[(CRtenX\_dict.loc[:, 'df\_type'] == 'ec')]['file\_name']"},
+3                  \textcolor{stringliteral}{"CRthousand\_dict[(CRthousand\_dict.loc[:,'df\_type']=='rad')]['file\_name']"}]
+\end{DoxyCode}
+
+
+dictionaries of date ranges built, now concatenate data for all files back to earliest files needed 
+
+
+
+Definition at line 171 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}{}\index{Preprocess D\+R@{Preprocess D\+R}!flist@{flist}}
+\index{flist@{flist}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{flist}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+flist = \mbox{[}{\bf s}\mbox{[}j\mbox{]} for j in range(len({\bf s}))\mbox{]}}\label{namespace_preprocess_01_d_r_afda23e41cb65dc5791e2e602863d22a6}
+
+
+Definition at line 182 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ad7dfeae6dec3bc6a6c9446124ceafdc3}{}\index{Preprocess D\+R@{Preprocess D\+R}!gap\+\_\+anal@{gap\+\_\+anal}}
+\index{gap\+\_\+anal@{gap\+\_\+anal}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{gap\+\_\+anal}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+gap\+\_\+anal = False}\label{namespace_preprocess_01_d_r_ad7dfeae6dec3bc6a6c9446124ceafdc3}
+
+
+Definition at line 42 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_adf993ed19a62ed0125e7086027d99260}{}\index{Preprocess D\+R@{Preprocess D\+R}!line@{line}}
+\index{line@{line}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+line = f.\+readline()}\label{namespace_preprocess_01_d_r_adf993ed19a62ed0125e7086027d99260}
+
+
+Definition at line 78 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_aae343c994d5743a749e85f21f6ed62a2}{}\index{Preprocess D\+R@{Preprocess D\+R}!make\+\_\+calc\+\_\+plots@{make\+\_\+calc\+\_\+plots}}
+\index{make\+\_\+calc\+\_\+plots@{make\+\_\+calc\+\_\+plots}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{make\+\_\+calc\+\_\+plots}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+make\+\_\+calc\+\_\+plots = False}\label{namespace_preprocess_01_d_r_aae343c994d5743a749e85f21f6ed62a2}
+
+
+Definition at line 45 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}{}\index{Preprocess D\+R@{Preprocess D\+R}!make\+\_\+gap\+\_\+plots@{make\+\_\+gap\+\_\+plots}}
+\index{make\+\_\+gap\+\_\+plots@{make\+\_\+gap\+\_\+plots}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{make\+\_\+gap\+\_\+plots}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+make\+\_\+gap\+\_\+plots = False}\label{namespace_preprocess_01_d_r_ab7f2e80b89ea6ef3dd80564bcc64e272}
+
+
+Definition at line 43 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}{}\index{Preprocess D\+R@{Preprocess D\+R}!path@{path}}
+\index{path@{path}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Preprocess D\+R.\+path = \textquotesingle{}..\textbackslash{}\textbackslash{}Dead\+River\textbackslash{}\textbackslash{}\+Raw\textbackslash{}\textbackslash{}\textquotesingle{}}\label{namespace_preprocess_01_d_r_afebb93b679a374da12eb4267b59fb9f8}
+
+
+\begin{DoxyVerb}path = '..\\Starkey\\RAW2\\'
+\end{DoxyVerb}
+ path = \textquotesingle{}I\+:\textbackslash{}A\+L\+L\textbackslash{}Tampa\+E\+T\textbackslash{}Field\+Files\textbackslash{}Starkey\textbackslash{}R\+A\+W2\textbackslash{}\textquotesingle{} path = \textquotesingle{}..\textbackslash{}Dead\+River\textbackslash{}Raw\textbackslash{}Working\textbackslash{}\textquotesingle{} 
+
+
+
+Definition at line 57 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a7026d20c2cef287201c48fdf79c0e8f7}{}\index{Preprocess D\+R@{Preprocess D\+R}!release\+\_\+end@{release\+\_\+end}}
+\index{release\+\_\+end@{release\+\_\+end}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{release\+\_\+end}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+release\+\_\+end = dt.\+datetime(2014, 8, 19, 10, 30)}\label{namespace_preprocess_01_d_r_a7026d20c2cef287201c48fdf79c0e8f7}
+
+
+Definition at line 37 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_ae8d2848548745ca8cb3fff24f95b8265}{}\index{Preprocess D\+R@{Preprocess D\+R}!release\+\_\+start@{release\+\_\+start}}
+\index{release\+\_\+start@{release\+\_\+start}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{release\+\_\+start}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+release\+\_\+start = dt.\+datetime(2009, 11, 20, 13, 30)}\label{namespace_preprocess_01_d_r_ae8d2848548745ca8cb3fff24f95b8265}
+
+
+Definition at line 36 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}{}\index{Preprocess D\+R@{Preprocess D\+R}!s@{s}}
+\index{s@{s}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+s = eval(fl)}\label{namespace_preprocess_01_d_r_af55803ec5bfdac4f81d9c47966d0aff1}
+
+
+Definition at line 181 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a28a0d49fbacac27b8de4fd609043b742}{}\index{Preprocess D\+R@{Preprocess D\+R}!skip@{skip}}
+\index{skip@{skip}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}Preprocess D\+R.\+skip = None}\label{namespace_preprocess_01_d_r_a28a0d49fbacac27b8de4fd609043b742}
+
+
+Definition at line 102 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}{}\index{Preprocess D\+R@{Preprocess D\+R}!station@{station}}
+\index{station@{station}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{station}]{\setlength{\rightskip}{0pt plus 5cm}string Preprocess D\+R.\+station = \textquotesingle{}d\textquotesingle{}}\label{namespace_preprocess_01_d_r_aae6f3cd9de873f4f53dd09d43f047642}
+
+
+Program run time options\+: 
+
+Station to analyze\+: \textquotesingle{}s\textquotesingle{} for Starkey, \textquotesingle{}d\textquotesingle{} for Dead River 
+
+Definition at line 29 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_a026e495ab57bb5f630a98c27cf13c1aa}{}\index{Preprocess D\+R@{Preprocess D\+R}!stop\+\_\+time@{stop\+\_\+time}}
+\index{stop\+\_\+time@{stop\+\_\+time}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{stop\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}tuple Preprocess D\+R.\+stop\+\_\+time}\label{namespace_preprocess_01_d_r_a026e495ab57bb5f630a98c27cf13c1aa}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dt.datetime(int(date\_str[0:4]), int(date\_str[5:7]), int(date\_str[8:10]),
+2                                     int(time\_str[0:2]), int(time\_str[3:5]))
+\end{DoxyCode}
+
+
+Definition at line 85 of file Preprocess D\+R.\+py.
+
+\hypertarget{namespace_preprocess_01_d_r_afe9443eef87a2a031c1106acc31cb166}{}\index{Preprocess D\+R@{Preprocess D\+R}!time\+\_\+str@{time\+\_\+str}}
+\index{time\+\_\+str@{time\+\_\+str}!Preprocess D\+R@{Preprocess D\+R}}
+\subsubsection[{time\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}list Preprocess D\+R.\+time\+\_\+str = {\bf C\+Rthousand\+\_\+span}\mbox{[}\textquotesingle{}Stop\+Time\textquotesingle{}\mbox{]}}\label{namespace_preprocess_01_d_r_afe9443eef87a2a031c1106acc31cb166}
+
+
+Definition at line 84 of file Preprocess D\+R.\+py.
+
