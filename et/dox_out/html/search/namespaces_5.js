@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['heatmap_5fslopes',['heatmap_slopes',['../namespaceheatmap__slopes.html',1,'']]],
-  ['heatmap_5fsubplots',['heatmap_subplots',['../namespaceheatmap__subplots.html',1,'']]]
+  ['optimum_5fgrowing_5fseason',['optimum_growing_season',['../namespaceoptimum__growing__season.html',1,'']]]
 ];

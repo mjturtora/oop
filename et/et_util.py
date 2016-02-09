@@ -26,7 +26,7 @@ Functions for processing Tampa ET data.
 import pandas as pd
 import numpy as np
 import datetime as dt
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import sys
 import os
 import time
@@ -79,6 +79,8 @@ def startup(path_in, path_out, path_temp,
             print 'Reading all data from raw archive folder'
             df_met, df_rad, df_ec, df_ec_all = read_files(path_out + 'archive\\raw\\')
 
+        '''
+        Commented out manual filtering
         # Filter here either way
         print '**************************************'
         print 'Filtering MET data for %s' % station
@@ -88,6 +90,8 @@ def startup(path_in, path_out, path_temp,
         print 'Applying Manual edits from edit files on path:', path_out
         df_met = apply_edits(path_out, df_met)
         print '**************************************'
+
+        '''
 
         print 'Writing all data to filtered archive folder'
         # todo: should write a file with actual timestamps of archived files

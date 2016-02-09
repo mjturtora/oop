@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['optimum_5fgrowing_5fseason_2epy',['optimum_growing_season.py',['../optimum__growing__season_8py.html',1,'']]]
+  ['heatmap_5fslopes_2epy',['heatmap_slopes.py',['../heatmap__slopes_8py.html',1,'']]],
+  ['heatmap_5fsubplots_2epy',['heatmap_subplots.py',['../heatmap__subplots_8py.html',1,'']]],
+  ['hierarchy_2ejs',['hierarchy.js',['../hierarchy_8js.html',1,'']]]
 ];

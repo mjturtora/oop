@@ -36,7 +36,8 @@ if __name__ == '__main__':
     # set in and out paths:
 
     # path for data logger files
-    path_in = '..\\DeadRiver\\Raw\\'
+    path_in = 'RAW_TEST\\'
+    #path_in = '..\\DeadRiver\\Raw\\'
     #path_in = '..\\Starkey\\RAW_TEST\\'
     #path_in = '..\\Starkey\\RAW2\\'
     #path_in = '..\\Starkey\\RAW\\'
@@ -45,8 +46,7 @@ if __name__ == '__main__':
     # each datastore folder has working files and an archive subfolder.
     # '_out' suffix is now a misnomer. Maybe rename to 'work?'
     #path_out = 'datastore\\Starkey_2015_02\\'
-    #path_out = 'datastore\\Starkey_01\\'
-    path_out = 'datastore\\DeadRiver_02\\'
+    path_out = 'datastore\\Starkey_01\\'
     #path_out = 'datastore\\DR01\\'
     #path_out = 'datastore\\test_datastore\\'
     #path_out = 'datastore\\raw2_datastore\\'
@@ -55,11 +55,12 @@ if __name__ == '__main__':
 
     # problem data logger files "cleaned" and written to temp folder
     #path_temp = 'datastore\\stark_temp_files\\'
-    path_temp = 'datastore\\dead_temp_files\\'
+    #path_temp = 'datastore\\dead_temp_files\\'
+    path_temp = 'datastore\\stark_temp_files\\'
 
     # Station to analyze: 's' for Starkey, 'd' for Dead River
-    #station = 's'
-    station = 'd'
+    station = 's'
+    #station = 'd'
 
     # date times for data release:
     #   looks like good data for DR starts (2009, 11, 20, 13, 00)
@@ -82,8 +83,8 @@ if __name__ == '__main__':
     # Rebuild unfiltered raw files to folder \archive\raw
     # or rebuild filtered raw files to folder \archive\filtered
     # valid entries are 'raw' and 'filtered', any other will pass to 'working'
-    rebuild = 'filtered'
-    #rebuild = 'raw'
+    #rebuild = 'filtered'
+    rebuild = 'raw'
     # todo: reading ec_all is very slow. Add option to skip or only do when needed.
     #   -> kludge: deleted all but top 2 rows from working copy:
     # path_out + 'df_ec_all.csv', (full version in "df_ec_all - Copy.csv")
@@ -104,7 +105,7 @@ if __name__ == '__main__':
     #expand_gaps = True  # used by impute strata
 
     # interpolate missing records in met file?
-    impute_values = True
+    impute_values = False
     # met options:
     make_calcs = False
     make_calc_plots = False
